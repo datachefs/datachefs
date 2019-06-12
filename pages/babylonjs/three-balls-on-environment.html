@@ -5,6 +5,7 @@
     <title>Babylon - Getting Started</title>
     <!--- Link to the last version of BabylonJS --->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <style>
         html, body {
             overflow: hidden;
@@ -22,7 +23,7 @@
     </style>
 </head>
 <body>
-    <canvas id="renderCanvas"></canvas>
+    <canvas id="renderCanvas" touch-action="none"></canvas>     //touch-action="none" for best results from PEP
     <script>
         window.addEventListener('DOMContentLoaded', function(){
             // get the canvas DOM element
@@ -44,7 +45,7 @@ var createScene = function () {
     camera.minZ = 0.1;
     
     // Environment Texture
-    var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("environment.dds", scene);
+    var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("courtyard.dds", scene);
 
     scene.imageProcessingConfiguration.exposure = 0.6;
     scene.imageProcessingConfiguration.contrast = 1.6;

@@ -1,0 +1,9 @@
+UP NEXT
+
+Try adding a sphere, see if I can use position
+
+Try adding 5 spheres with red or green color
+
+Try creating those spheres using an array (see bar chart for how)
+
+Try putting text on each 1
