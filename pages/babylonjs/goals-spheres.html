@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-    <title>Template Title</title>
+    <title>Goals in a Row </title>
     <!--- Link to the last version of BabylonJS --->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
@@ -26,9 +26,35 @@ var createScene = function () {
     scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
     scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
 
+    // --- --- --- Put your code here -- -- -- 
+    var goal, sphere, goalMaterial;
+    
+    var goodScoreColor =  new BABYLON.Color3.Purple();
+    var badScoreColor = new BABYLON.Color3.Yellow();
 
-    // Put your code here
-	
+    var goals = [
+        { name: 'Communicate', score: 3},
+        { name: 'Sustain', score: 1},
+        { name: 'Grow', score: 3},
+        { name: 'Transform', score: 2}
+    ];
+
+
+    // Loop through the goals, creating a sphere for each goal
+    for (goal = 0; goal < goals.length; goal++) {
+        sphere = BABYLON.Mesh.CreateSphere('Goal ' + goal, 10, 10, scene);
+        sphere.position = new BABYLON.Vector3(-20 + (goal* 16), 0, 0); 
+
+        // If any goal has a score > 1, give it's sphere the good score color; otherwise give it the bad score color
+        var goalMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+        if (goals[goal].score >1) {
+            goalMaterial.diffuseColor = goodScoreColor;
+        } else {
+            goalMaterial.diffuseColor =  badScoreColor;
+        };
+        sphere.material = goalMaterial;
+    };
+
 
 
     return scene;

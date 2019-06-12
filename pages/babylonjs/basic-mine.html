@@ -20,29 +20,32 @@ var canvas = document.getElementById("renderCanvas"); // Get the canvas element
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 var createScene = function () {
-    // Set up a default scene, including a camera and lighting
+    // Set up a basic scene, including a camera and lighting
     var scene = new BABYLON.Scene(engine);
-
-    
-    // Put your code here
-    var box = BABYLON.MeshBuilder.CreateBox("box", {});
     scene.createDefaultCameraOrLight(true, true, true);
-    var helper = scene.createDefaultEnvironment();
-    helper.setMainColor(BABYLON.Color3.Teal());
+    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
+    scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
 
-    // NOTE: this is not showing up, not sure why
-    var sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene);
-    sphere.position = new BABYLON.Vector3(-80, 40, 40); 
 
+    // Put your code here
+	
+    var sphere = BABYLON.Mesh.CreateSphere('mySphere', 10, 10, scene);
+    sphere.position = new BABYLON.Vector3(-10, 0, 0); 
+
+    var box = BABYLON.Mesh.CreateBox("myBox", 9, scene);
+    box.position = new BABYLON.Vector3(0, -10, 0);
+    var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+    myMaterial.diffuseColor =  new BABYLON.Color3.Yellow();
+    box.material = myMaterial;
 
     return scene;
 
 };
 
-// run the render loop, Add an event handler to handle if the window/canvas is resized
+// "Render" the scene so we can see it
 var scene = createScene();
 engine.runRenderLoop( function(){ scene.render(); } );
-window.addEventListener('resize', function(){ engine.resize(); } );
+window.addEventListener('resize', function(){ engine.resize(); } );     // If the user resizes the browser, update the screen
 
 </script>
 </body>
