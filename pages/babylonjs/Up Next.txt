@@ -1,9 +1,17 @@
 UP NEXT
 
-Try adding a sphere, see if I can use position
+- Figure out how to use position as well as translate with pretty balls
 
-Try adding 5 spheres with red or green color
+- Figure out how pretty balls work
 
-Try creating those spheres using an array (see bar chart for how)
+- Showing only certain parts of an imported object as a way of displaying progress
+start with "https://www.babylonjs.com/Assets/FlightHelmet/glTF/"
+call inspector from the code
 
-Try putting text on each 1
+- Animation?
+
+- Freewrite: what do I want to do next? What are my next couple of steps that would make me happy and start building a portfolio? And how can I do something like what I did at working America?
+
+- A list of small things I can work on, so I could put in one hour or half hour every day and make worthwhile progress
+
+- Putting text on spheres
