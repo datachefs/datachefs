@@ -8,4 +8,3 @@ image: site-banner.jpg
 
 More to come soon. }
 
-{ Link to [BabylonJS Experiment](pages/babylonjs/index.html) }

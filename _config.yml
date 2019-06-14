@@ -5,16 +5,16 @@ description:  Description of this site
 
 # Menu data for sitewide navigation
 navigation_links:
-#  - name: About
-#    link: 'about/'
-  - name: Strategy
-    link: 'strategy/'
-  - name: Deep Learning
-    link: 'deep-learning/'
-  - name: Data Factory
-    link: 'data-factory/'
-  - name: Resources
-    link: 'resources'
+  - name: About
+    link: 'about/'
+#  - name: Strategy
+#    link: 'strategy/'
+  - name: Learning Deep Learning
+    link: 'learning-deep-learning/'
+  - name: BabylonJS
+    link: 'babylonjs/'
+  # - name: Links
+    # link: 'links'
   - name: Makers All
     link: 'https://makersall.org/'
 
