@@ -6,6 +6,9 @@
     <!--- Link to the last version of BabylonJS --->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="https://cdn.babylonjs.com/Oimo.js"></script>
+
+    
     <style>
         html, body { overflow: hidden; width: 100%; height: 100%; margin: 0; padding: 0; }
         #renderCanvas { width: 100%; height: 100%; touch-action: none;  }
@@ -22,15 +25,15 @@ var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 var createScene = function () {
     // Set up a basic scene, including a camera and lighting
     var scene = new BABYLON.Scene(engine);
-    scene.createDefaultCameraOrLight(true, true, true);
-    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
-    scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
+    // scene.createDefaultCameraOrLight(true, true, true);
+    // scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
+    // scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
 
 
     // Put your code here
+
+    // Original version: https://www.babylonjs-playground.com/#7149G4#0
 	
-    var createScene = function () {
-    var scene = new BABYLON.Scene(engine);
     scene.clearColor = BABYLON.Color3.Purple();
 
     var camera = new BABYLON.FreeCamera("Camera", new BABYLON.Vector3(0, 0, -20), scene);
@@ -44,20 +47,20 @@ var createScene = function () {
 
     // Material
     var materialAmiga = new BABYLON.StandardMaterial("amiga", scene);
-    materialAmiga.diffuseTexture = new BABYLON.Texture("textures/amiga.jpg", scene);
+    materialAmiga.diffuseTexture = new BABYLON.Texture("../assets/bjs-amiga.jpg", scene);
     materialAmiga.emissiveColor = new BABYLON.Color3(0.5, 0.5, 0.5);
     materialAmiga.diffuseTexture.uScale = 5;
     materialAmiga.diffuseTexture.vScale = 5;
 
     var materialAmiga2 = new BABYLON.StandardMaterial("amiga", scene);
-    materialAmiga2.diffuseTexture = new BABYLON.Texture("textures/amiga.jpg", scene);
+    materialAmiga2.diffuseTexture = new BABYLON.Texture("../assets/bjs-amiga.jpg", scene);
     materialAmiga2.emissiveColor = new BABYLON.Color3(0.5, 0.5, 0.5);
 
     // Shadows
     var shadowGenerator = new BABYLON.ShadowGenerator(2048, light);
 
-    // Physics
-    //scene.enablePhysics(null, new BABYLON.CannonJSPlugin());
+    // // Physics
+    // //scene.enablePhysics(null, new BABYLON.CannonJSPlugin());
     scene.enablePhysics(null, new BABYLON.OimoJSPlugin());
 
     // Spheres
@@ -96,7 +99,7 @@ var createScene = function () {
     var box0 = BABYLON.Mesh.CreateBox("Box0", 3, scene);
     box0.position = new BABYLON.Vector3(3, 30, 0);
     var materialWood = new BABYLON.StandardMaterial("wood", scene);
-    materialWood.diffuseTexture = new BABYLON.Texture("textures/crate.png", scene);
+    materialWood.diffuseTexture = new BABYLON.Texture("../assets/bjs-crate.png", scene);
     materialWood.emissiveColor = new BABYLON.Color3(0.5, 0.5, 0.5);
     box0.material = materialWood;
 
@@ -170,8 +173,6 @@ var createScene = function () {
 
     part0.physicsImpostor = new BABYLON.PhysicsImpostor(part0, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 2, friction: 0.4, restitution: 0.3 }, scene);
 
-    return scene;
-}
 
 
     return scene;
