@@ -3,12 +3,22 @@ layout: content
 title: What BabylonJS Can Do
 image: cupcakes-animals.jpg
 ---
-These examples should give you a pretty good idea of what BabylonJS can do -- especially the things it can do that are pretty impressive. Most of these examples are tweets from the examples found in BabylonJS' documentation or their list of examples. The code was largely used as is; if we decide to end up using any of these tricks/features in a data visualization, we will greatly simplify the code & hide the weird stuff in functions.
+<p>These examples should give you a pretty good idea of what BabylonJS can do -- especially the things it can do that are pretty impressive. Most of these examples are tweets from the examples found in BabylonJS' documentation or their list of examples. The code was largely used as is; if we decide to end up using any of these tricks/features in a data visualization, we will greatly simplify the code & hide the weird stuff in functions.</p>
 
-<h2>Animation Experiments</h2>
+<h2>Animation: Physics Engine</h2>
+<ul>
+<li> <a href="physics/bounce-move.html">Ball Bounces and Moves</a></li>
+<li> <a href="physics/bounce-change-color.html">Ball Bounces and Changes Color</a></li>
+<li> <a href="physics/">
+</a></li>
+<li> <a href="physics/">
+</a></li>
+<li> <a href="physics/pretty-balls-dropping.html">Pretty Balls and Crates Falling</a></li>
+</ul>
+
+<h2>Animation: Other Experiments</h2>
 <ul>
 <li> <a href="animation/sprites.html">Sprites</a></li>
-<li> <a href="animation/physics-balls-dropping.html">Physics Engine</a></li>
 </ul>
 
 <h2>Other Pretty Stuff</h2>
