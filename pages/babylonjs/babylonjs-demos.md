@@ -25,7 +25,7 @@ image: cupcakes-animals.jpg
 <ul>
 <li> <a href="pretty/three-balls-on-environment.html">3 balls with environment</a></li>
 <li> 3 balls with <a href="pretty/three-balls-simple.html">simplified code</a> (looks basically the same, mostly an experiment in hiding the weird stuff  in functions</li>
-<li> <a href="zebra dump/3d-camera.html">3D picture</a></li>
+<li> <a href="pretty/3d-camera.html">3D picture</a></li>
 </ul>
 
    
