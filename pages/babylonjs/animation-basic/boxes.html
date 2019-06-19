@@ -23,13 +23,41 @@ var createScene = function () {
     // Set up a basic scene, including a camera and lighting
     var scene = new BABYLON.Scene(engine);
     scene.createDefaultCameraOrLight(true, true, true);
-    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
+    scene.cameras[0].radius = 80;                   // Move the camera back so it's easier to see everything in the scene
     scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
 
 
     // Put your code here
+	
+    // var sphere = BABYLON.Mesh.CreateSphere('mySphere', 10, 10, scene);
+    // sphere.position = new BABYLON.Vector3(-10, 0, 0); 
 
-    
+    var numberBoxes = 35;
+
+    var boxes = [];
+    for (var box = 0; box < numberBoxes; box++) {
+
+        boxes[box] = BABYLON.Mesh.CreateBox("myBox", 0.5, scene);
+        boxes[box].position = new BABYLON.Vector3(-30 + (box * 2), -10, 0);
+        var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+        myMaterial.diffuseColor =  new BABYLON.Color3.Yellow();
+        boxes[box].material = myMaterial;
+
+        var animationBox = new BABYLON.Animation("movingBox", "position.y", 30, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+                                                                        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+        // Animation keys
+        var keys = [];
+        keys.push({ frame: Math.random() * 50, value: -10 });
+        keys.push({ frame: 100, value: 20 });
+
+        animationBox.setKeys(keys);
+        boxes[box].animations.push(animationBox);
+    };
+
+    for (box = 0; box < numberBoxes; box++) {
+        scene.beginAnimation(boxes[box], 0, 100, true);
+    };
+
 
 
     return scene;

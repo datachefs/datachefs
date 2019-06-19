@@ -1,14 +1,47 @@
 UP NEXT
 
+What is instead of trying to do everything, I radically narrowed my scope to:
+- Using animate
+  - with simple objects
+  - with PBR
+  - with fancier materials (textures?)
+  - with GLTFs
+- Adding labels a.k.a. text
+- Adding controls
+
+For example:
+
+- Traffic with buses and biking versus cars?
+  - FIRST: how will I calculate how much traffic?
+
+- Mobility data
+  - Use movement along a path?
+  - Can you use one animation key/map for multiple objects? Does it matter?
+  - Using a color gradient so you can easily track how many people ended up moving from one bracket to another, and crossing that by race/gender/etc.
+
+
+And then I could try:
+- Showing only certain parts of a GLFT as a way of displaying progress
+  - start with "https://www.babylonjs.com/Assets/FlightHelmet/glTF/"
+  - call inspector from the code
+  - Try using a sandwich!
+
+- Creating an abstract map
+  - Of a few states where you have offices
+  - Of rooms in a building
+
+
+
+
+
+
+
+--- --- --- 
+
 - Figure out how to use position as well as translate with pretty balls
 
 - Figure out how pretty balls work
 
-- Showing only certain parts of an imported object as a way of displaying progress
-start with "https://www.babylonjs.com/Assets/FlightHelmet/glTF/"
-call inspector from the code
-
-- Animation?
 
 - Freewrite: what do I want to do next? What are my next couple of steps that would make me happy and start building a portfolio? And how can I do something like what I did at working America?
 

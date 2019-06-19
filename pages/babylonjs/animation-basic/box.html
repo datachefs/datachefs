@@ -28,8 +28,28 @@ var createScene = function () {
 
 
     // Put your code here
+	
+    // var sphere = BABYLON.Mesh.CreateSphere('mySphere', 10, 10, scene);
+    // sphere.position = new BABYLON.Vector3(-10, 0, 0); 
 
-    
+    var box = BABYLON.Mesh.CreateBox("myBox", 2, scene);
+    box.position = new BABYLON.Vector3(0, -10, 0);
+    var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+    myMaterial.diffuseColor =  new BABYLON.Color3.Yellow();
+    box.material = myMaterial;
+
+    var animationBox = new BABYLON.Animation("movingBox", "position.y", 30, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+                                                                    BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // Animation keys
+    var keys = [];
+    keys.push({ frame: 0, value: -10 });
+    keys.push({ frame: 20, value: 20 });
+
+    animationBox.setKeys(keys);
+    box.animations.push(animationBox);
+
+    scene.beginAnimation(box, 0, 100, true);
+
 
 
     return scene;
