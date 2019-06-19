@@ -9,6 +9,7 @@ image: cupcakes-animals.jpg
 <ul>
 <li> <a href="animation-basic/box.html">Animated box</a></li>
 <li> <a href="animation-basic/boxes.html">Animated boxes</a></li>
+<li> <a href="animation-basic/ball-xy.html">Ball moving across the screen up and down</a></li>
 <li> <a href="animation-basic/two-moving.html">2 moving</a></li>
 <li> <a href="animation-basic/blended.html">Blended animation</a></li>
 </ul>

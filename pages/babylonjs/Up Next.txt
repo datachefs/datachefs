@@ -1,5 +1,10 @@
 UP NEXT
 
+
+
+
+
+
 What is instead of trying to do everything, I radically narrowed my scope to:
 - Using animate
   - with simple objects
