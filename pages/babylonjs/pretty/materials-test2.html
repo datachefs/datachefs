@@ -28,6 +28,14 @@ var createScene = function () {
 
     // Put your code here
 	
+    var sphere = BABYLON.Mesh.CreateSphere('mySphere', 10, 10, scene);
+    sphere.position = new BABYLON.Vector3(-10, 0, 0); 
+
+    var box = BABYLON.Mesh.CreateBox("myBox", 9, scene);
+    box.position = new BABYLON.Vector3(0, -10, 0);
+    var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+    myMaterial.diffuseColor =  new BABYLON.Color3.Yellow();
+    box.material = myMaterial;
 
 
     return scene;

@@ -6,11 +6,22 @@ image: cupcakes-animals.jpg
 <p>These examples should give you a pretty good idea of what BabylonJS can do -- especially the things it can do that are pretty impressive. Most of these examples are tweets from the examples found in BabylonJS' documentation or their list of examples. The code was largely used as is; if we decide to end up using any of these tricks/features in a data visualization, we will greatly simplify the code & hide the weird stuff in functions.</p>
 
 <h2>Cranking up the Pretty</h2>
+
+<h4>Pretty Examples</h4>
 <ul>
 <li> <a href="pretty/three-balls-on-environment.html">3 balls with environment</a></li>
 <li> 3 balls with <a href="pretty/three-balls-simple.html">simplified code</a>: looks basically the same, mostly an experiment in hiding the weird stuff  in functions</li>
 <li> <a href="pretty/3d-camera.html">3D picture</a></li>
 </ul>
+
+<h4>Materials Examples</h4>
+<ul>
+<li> <a href="pretty/materials-test1.html">First Test</a></li>
+<li> <a href="pretty/materials-test2.html">Second Test</a></li>
+<li> <a href="pretty/materials-test3.html">Third Test</a></li>
+
+</ul>
+
 
 <h2>Animation</h2>
 
@@ -25,8 +36,8 @@ image: cupcakes-animals.jpg
 </ul>
 
 <h4>Animation Using the "Render" Loop</h4>
-<p> Coming soon…</p>
 <ul>
+<li> <a href="animation-render/rubiks-cube.html">Simple Rubiks cube</a> (from  <a href="https://playground.babylonjs.com/#F7BSJ6#4">Trevor Baron</a>)</li> 
 </ul>
 
 <h4>Physics Engine</h4>
@@ -37,8 +48,8 @@ image: cupcakes-animals.jpg
 </ul>
 
 <h4>Particles and SPS</h4>
-<p> Coming soon…</p>
 <ul>
+<li> <a href="particles-sps/buildings.html">Making a city</a> with SPS (from <a href="https://playground.babylonjs.com/#2FPT1A#56">David Catuhe</a>) </li>
 </ul>
 
 <h4>Sprites and Other Techniques</h4>
