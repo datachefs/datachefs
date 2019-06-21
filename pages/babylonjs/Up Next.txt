@@ -1,10 +1,6 @@
 UP NEXT
 
 
-
-
-
-
 What is instead of trying to do everything, I radically narrowed my scope to:
 - Using animate
   - with simple objects
@@ -18,11 +14,16 @@ For example:
 
 - Traffic with buses and biking versus cars?
   - FIRST: how will I calculate how much traffic?
+(Carrying capacity of walking, biking, buses, etc vs cars — Brent todarian for data?  That info graphic )
 
-- Mobility data
+- Social Mobility data
   - Use movement along a path?
   - Can you use one animation key/map for multiple objects? Does it matter?
   - Using a color gradient so you can easily track how many people ended up moving from one bracket to another, and crossing that by race/gender/etc.
+	NYT race and class mobility animation
+	https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html
+	The mobility data
+	https://opportunityinsights.org/data/
 
 
 And then I could try:
@@ -33,23 +34,17 @@ And then I could try:
 
 - Creating an abstract map
   - Of a few states where you have offices
+	https://raw.githubusercontent.com/aschneiderman/d3_sandwich/gh-pages/sandwiches/Abstract_Map_1/abstract_state.js
+	https://raw.githubusercontent.com/aschneiderman/d3_sandwich/gh-pages/sandwiches/Abstract_Map_1/abstract_state.html
   - Of rooms in a building
 
+Miss Melissa - Animating text: Ms. Melissa's Dash-Your-Hopes Board
+http://aschneiderman.github.io/a-taste-of-d3/03-animation/03-30-Text-Ms-Melissa.html
+
+An example of what I could do with skull (have parts light up?)(funny thing on anxieties?)
+https://www.good.is/infographics/vitamin-atlas#open
+
+Animated building of a skyline
+https://www.nationalgeographic.com/new-york-city-skyline-tallest-midtown-manhattan/
 
 
-
-
-
-
---- --- --- 
-
-- Figure out how to use position as well as translate with pretty balls
-
-- Figure out how pretty balls work
-
-
-- Freewrite: what do I want to do next? What are my next couple of steps that would make me happy and start building a portfolio? And how can I do something like what I did at working America?
-
-- A list of small things I can work on, so I could put in one hour or half hour every day and make worthwhile progress
-
-- Putting text on spheres

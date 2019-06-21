@@ -33,6 +33,7 @@ image: cupcakes-animals.jpg
 <li> <a href="animation-keys/boxes.html">Animated boxes</a></li>
 <li> <a href="animation-keys/ball-xy.html">Ball moving along a line</a></li>
 <li> <a href="animation-keys/balls-xy.html">Several balls moving along a line </a></li>
+<li> <a href="animation-keys/balls-levels.html">Balls moving from level to level</a></li>
 </ul>
 
 <h4>Animation Using the "Render" Loop</h4>
