@@ -2,17 +2,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-    <title>Goals in a Row </title>
-    <!--- Link to the last version of BabylonJS --->
-    <script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <title>Template Title</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>        <!--- Link to the last version of BabylonJS --->
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>    <!-- Lets mobile devices manipulate the screen -->
     <style>
         html, body { overflow: hidden; width: 100%; height: 100%; margin: 0; padding: 0; }
         #renderCanvas { width: 100%; height: 100%; touch-action: none;  }
     </style>
 </head>
 <body>
-<canvas id="renderCanvas" touch-action="none"></canvas>     // touch-action="none" for best results from PEP
+<canvas id="renderCanvas" touch-action="none"></canvas>      <!-- touch-action="none" for best results from PEP -->
 
 <script>
 // Get set up
@@ -20,18 +19,28 @@ var canvas = document.getElementById("renderCanvas"); // Get the canvas element
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 var createScene = function () {
-    // Set up a basic scene, including a camera and lighting
     var scene = new BABYLON.Scene(engine);
-    scene.createDefaultCameraOrLight(true, true, true);
-    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
-    scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
+     scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
+
+    var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2, 3 * Math.PI / 8, 5, BABYLON.Vector3.Zero(), scene);
+    camera.attachControl(canvas, true);
+	
+	
+	//Light direction is up and left
+	var light = new BABYLON.HemisphericLight("hemiLight", new BABYLON.Vector3(-1, 1, 0), scene);
+	light.diffuse = BABYLON.Color3.White();       
+	// light.diffuse = new BABYLON.Color3(1, 0, 0);
+	// light.specular = new BABYLON.Color3(0, 1, 0);
+	// light.groundColor = new BABYLON.Color3(0, 1, 0);
 
     // --- --- --- Put your code here -- -- -- 
     var goal, sphere, goalMaterial;
 
     // The colors we are using for good and bad scores
-    var goodScoreColor =  new BABYLON.Color3.Purple();
-    var badScoreColor = new BABYLON.Color3.Yellow();
+	badScore = new BABYLON.StandardMaterial("Good Score", scene);
+	badScore.diffuseColor = new BABYLON.Color3.Red();
+	goodScore = new BABYLON.StandardMaterial("Good Score", scene);
+	goodScore.diffuseColor = new BABYLON.Color3.Purple();
 
     // The data: the score for each goal and also where it should be positioned on the screen
     // NOTE: If we do this for real, we will split the grid and the scores into separate variables
@@ -45,23 +54,17 @@ var createScene = function () {
     // Loop through the goals, creating a sphere for each goal
     for (goal = 0; goal < goals.length; goal++) {
 
-        // Create a sphere for each goal, and position it on a grid according to the goal's row and column info
-        sphere = BABYLON.Mesh.CreateSphere('Goal ' + goal, 10, 10, scene);
-        sphere.position = new BABYLON.Vector3(  goals[goal].column * 16 - 30, 
-                                                20 - (goals[goal].row * 15) , 0); 
-
-        // If any goal has a score > 1, give it's sphere the good score color; otherwise give it the bad score color
-        var goalMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+		var sphere = BABYLON.MeshBuilder.CreateSphere("Goal " + goal, {}, scene);
+		sphere.position.y = 2 - (goals[goal].row * 1.1) ;
+		sphere.position.x = goals[goal].column * 1.1 - 2.5  ;
         if (goals[goal].score >1) {
-            goalMaterial.diffuseColor = goodScoreColor;
-        } else {
-            goalMaterial.diffuseColor =  badScoreColor;
-        };
-        sphere.material = goalMaterial;
-    };
+			sphere.material = badScore;
+		} else {
+			sphere.material = goodScore;
+		};
 
-
-
+	};  
+	    
     return scene;
 
 };

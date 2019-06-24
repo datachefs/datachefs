@@ -19,17 +19,38 @@ var canvas = document.getElementById("renderCanvas"); // Get the canvas element
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 var createScene = function () {
-    // Set up a basic scene, including a camera and lighting
     var scene = new BABYLON.Scene(engine);
-    scene.createDefaultCameraOrLight(true, true, true);
-    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
-    scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
-
-
-    // Put your code here
+    var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2,  Math.PI / 4, 5, BABYLON.Vector3.Zero(), scene);
+    camera.attachControl(canvas, true);
 	
-
-
+    scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
+	scene.ambientColor = new BABYLON.Color3(1, 1, 1);
+	
+	//Light direction is up and left
+	var light = new BABYLON.HemisphericLight("hemiLight", new BABYLON.Vector3(-1, 1, 0), scene);
+	light.diffuse = new BABYLON.Color3(1, 0, 0);
+	light.specular = new BABYLON.Color3(0, 1, 0);
+	light.groundColor = new BABYLON.Color3(0, 1, 0);
+	
+	var redMat = new BABYLON.StandardMaterial("redMat", scene);
+	redMat.ambientColor = new BABYLON.Color3(1, 0, 0);
+	
+	var greenMat = new BABYLON.StandardMaterial("redMat", scene);
+	greenMat.ambientColor = new BABYLON.Color3(0, 1, 0);
+	
+	//No ambient color
+	var sphere0 = BABYLON.MeshBuilder.CreateSphere("sphere0", {}, scene);
+	sphere0.position.x = -1.5;	
+	
+	//Red Ambient  
+	var sphere1 = BABYLON.MeshBuilder.CreateSphere("sphere1", {}, scene);
+	sphere1.material = redMat;
+	
+	//Green Ambient
+	var sphere2 = BABYLON.MeshBuilder.CreateSphere("sphere2", {}, scene);
+	sphere2.material = greenMat;
+	sphere2.position.x = 1.5;				
+	    
     return scene;
 
 };
