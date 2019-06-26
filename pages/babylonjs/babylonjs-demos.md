@@ -22,6 +22,16 @@ image: cupcakes-animals.jpg
 
 </ul>
 
+<h4>3D Assets</h4>
+<ul>
+<li> <a href="glft/red-airplane.html">Red Airplane</a> </li>
+<li> <a href="glft/boombox.html">Boombox</a> </li>
+<li> <a href="animation-other/dude-rabbit.html">Dude with rabbit</a></li>
+</ul>
+
+<!-- <li> <a href="glft/">
+<li> <a href="glft/"> -->
+
 
 <h2>Animation</h2>
 

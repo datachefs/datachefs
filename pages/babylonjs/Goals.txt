@@ -1,0 +1,27 @@
+3 spheres
+- Using colors
+- Using a gradient
+- Animation over several years?
+
+Animation of levels
+- Membership email opt out
+- Cost of membership email opt out
+- Social mobility? Or member involvement? (Showing how critical member involvement is in the first year)
+
+Animated characters
+- Running character moving up levels, with commentary (an example of 2D)
+- Pieces of the puzzle
+
+3's super simple examples for learning how to code:
+- create some stuff
+- Using the variable, see you don't have a weird number in the middle of your code; for example, good score versus bad score
+- Storing your data in a list, using a loop
+- Using an if statement
+I don't necessarily have to create the examples, I just need to describe them.
+
+Notes:
+- This first round: focus not on_what_best to communicate but rather what's possible -- what ingredients, what tools. Especially because I'm a developer, not a graphics designer
+- 3 types of 3D data visualization:
+  - To most effectively communicate a story
+  - To get folks fired up -- not uncommon with groups trying to hit goals to do something creative. For example, each year you set goals, so have a graphics designer come up with animated characters you're going to use to represent goals that year
+  - To add sizzle because you need people to pay attention  :-)
