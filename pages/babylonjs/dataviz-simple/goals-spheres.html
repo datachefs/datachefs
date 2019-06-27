@@ -6,6 +6,9 @@
     <!--- Link to the last version of BabylonJS --->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src='simple-datachefs.js'></script>
+
     <style>
         html, body { overflow: hidden; width: 100%; height: 100%; margin: 0; padding: 0; }
         #renderCanvas { width: 100%; height: 100%; touch-action: none;  }
@@ -19,20 +22,7 @@
 var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
-var createScene = function () {
-    // Set up a basic scene, including a camera and lighting
-    var scene = new BABYLON.Scene(engine);
-    scene.createDefaultCameraOrLight(true, true, true);
-    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
-    scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
-
-    // --- --- --- Put your code here -- -- -- 
-    var goal, sphere, goalMaterial;
-    
-    var goodScoreColor =  new BABYLON.Color3.Purple();
-    var badScoreColor = new BABYLON.Color3.Yellow();
-
-    var goals = [
+var goals = [
         { name: 'Communicate', score: 3},
         { name: 'Sustain', score: 1},
         { name: 'Grow', score: 3},
@@ -40,9 +30,53 @@ var createScene = function () {
     ];
 
 
+var createScene = function () {
+    // Set up a basic scene, including a camera and lighting
+    var scene = new BABYLON.Scene(engine);
+    scene.createDefaultCameraOrLight(true, true, true);
+    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
+    // scene.clearColor = BABYLON.Color3.Teal();       // Set the scene's background color
+
+    var dome = new BABYLON.PhotoDome(
+        "testdome",
+        // "../assets/GatonaParkWalkway1_Panorama_4Kx2K.jpg",
+        "../assets/plenar-hall-ortner-marcus2.jpg",
+        // "../assets/bjs-360photo.jpg",
+        {
+            resolution: 32,
+            size: 1000
+        },
+        scene
+    );
+
+
+
+//     var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("bjs-country.dds", scene);
+
+
+//     var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("bjs-room.dds", scene);
+
+// scene.imageProcessingConfiguration.exposure = 0.6;
+// scene.imageProcessingConfiguration.contrast = 1.6;
+
+// // Skybox
+// var hdrSkybox = BABYLON.Mesh.CreateBox("hdrSkyBox", 1000.0, scene);
+// var hdrSkyboxMaterial = new BABYLON.PBRMaterial("skyBox", scene);
+// hdrSkyboxMaterial.backFaceCulling = false;
+// hdrSkyboxMaterial.reflectionTexture = hdrTexture.clone();
+// hdrSkyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+// hdrSkyboxMaterial.microSurface = 1.0;
+// hdrSkyboxMaterial.disableLighting = true;
+// hdrSkybox.material = hdrSkyboxMaterial;
+// hdrSkybox.infiniteDistance = true;
+
+    var goal, sphere, goalMaterial;
+    var goodScoreColor =  new BABYLON.Color3.Purple();
+    var badScoreColor = new BABYLON.Color3.Red();
+
     // Loop through the goals, creating a sphere for each goal
     for (goal = 0; goal < goals.length; goal++) {
-        sphere = BABYLON.Mesh.CreateSphere('Goal ' + goal, 10, 10, scene);
+        sphere = BABYLON.MeshBuilder.CreateSphere('Goal ' + goal,  {diameter: 10}, scene);
         sphere.position = new BABYLON.Vector3(-20 + (goal* 16), 0, 0); 
 
         // If any goal has a score > 1, give it's sphere the good score color; otherwise give it the bad score color
@@ -53,12 +87,12 @@ var createScene = function () {
             goalMaterial.diffuseColor =  badScoreColor;
         };
         sphere.material = goalMaterial;
+
+        simpleTextBlock(goals[goal].name, {x: -20 + (goal* 16), y: 9, z: 0},scene);
+
     };
 
-
-
     return scene;
-
 };
 
 // "Render" the scene so we can see it

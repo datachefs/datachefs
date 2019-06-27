@@ -12,9 +12,5 @@ image: 'cupcakes-reflection.jpg'
 - [Simple](../pages/babylonjs/simple-dataviz.html) data visualizations
 - Examples for [learning the basics](../pages/babylonjs/basics.html)
 
-Useful Links
-
-<ul>
-<li>BabylonJS Playground <a href="../pages/babylonjs/playground-explore.html">examples to explore</a></li>
- <li><a href="https://github.com/BabylonJS/Babylon.js/tree/master/Playground/textures"> Sample Textures</a></li>
-</ul>
+Caveats
+- Why version 0.1 is light on the content and [heavy on the sizzle](why-sizzle.html) 

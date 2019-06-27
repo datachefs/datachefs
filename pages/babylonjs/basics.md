@@ -10,6 +10,12 @@ image: muffins-brown.jpg
 <li> My <a href="basics/basic-mine.html">Basic Example</a></li>
 </ul>
 
+<h2>Notes</h2>
+<ul>
+<li> If you're creating a basic shape, use MeshBuilder. A lot of the older examples on the playground don't, and they just don't look as good -- the defaults on MeshBuilder are much better. <blockquote>var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2}, scene);</blockquote></li>
+</ul>
+
+
 <h2>BabylonJS Resources</h2>
 <ul>
 <li> BabylonJS'  <a href="https://doc.babylonjs.com/babylon101/">Babylon 101</a></li>
