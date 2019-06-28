@@ -5,6 +5,31 @@ function strawberry(text, scene) {
 };
 
 
+function simpleEnvironment () {
+    // Set up a basic scene, including a camera and lighting
+    var scene = new BABYLON.Scene(engine);
+    scene.createDefaultCameraOrLight(true, true, true);
+    scene.cameras[0].radius = 60;                   // Move the camera back so it's easier to see everything in the scene
+    scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
+    return scene;
+};
+
+function simpleRunScene(scene, engine) {
+    engine.runRenderLoop( function(){ scene.render(); } );
+    window.addEventListener('resize', function(){ engine.resize(); } );     // If the user resizes the browser, update the screen
+};
+
+function simpleSphere (name, x, y, z, options) {
+    var ball = BABYLON.Mesh.CreateSphere(name, 1, 1, scene);
+    ball.position = new BABYLON.Vector3(x, y, z); 
+    var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
+    myMaterial.diffuseColor =  new BABYLON.Color3.Teal();
+    ball.material = myMaterial;
+    return ball;
+};
+
+
+
 /**  simpleTextBlock: create a simple text label
 Required:  text; the options for x, y, z; the scene
 NOTE: I called it simpleTextBlock instead of, for ex, simpleLabel, as a little foreshadowing:
