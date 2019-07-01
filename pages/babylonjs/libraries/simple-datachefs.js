@@ -53,4 +53,6 @@ function simpleTextBlock(text, options, scene) {
     // guiText.textWrapping= true;
     // guiText.lineSpacing = percentage;
     advancedTexture.addControl(guiText);
+
+    return guiText;
 };
