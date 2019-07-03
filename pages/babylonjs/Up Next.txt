@@ -1,66 +1,7 @@
 UP NEXT
 
 
-What is instead of trying to do everything, I radically narrowed my scope to:
-- Using animate
-  - with simple objects
-  - with PBR
-  - with fancier materials (textures?)
-  - with GLTFs
-- Adding labels a.k.a. text
-- Adding controls
+- Add in HTML colors:
+JavaScript for this:
+https://www.w3schools.com/lib/w3color.js
 
-For example:
-
-- Traffic with buses and biking versus cars?
-  - FIRST: how will I calculate how much traffic?
-(Carrying capacity of walking, biking, buses, etc vs cars — Brent todarian for data?  That info graphic )
-
-- Social Mobility data
-  - Use movement along a path?
-  - Can you use one animation key/map for multiple objects? Does it matter?
-  - Using a color gradient so you can easily track how many people ended up moving from one bracket to another, and crossing that by race/gender/etc.
-	NYT race and class mobility animation
-	https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html
-	The mobility data
-	https://opportunityinsights.org/data/
-
-
-And then I could try:
-- Showing only certain parts of a GLFT as a way of displaying progress
-  - start with "https://www.babylonjs.com/Assets/FlightHelmet/glTF/"
-  - call inspector from the code
-  - Try using a sandwich!
-
-- Creating an abstract map
-  - Of a few states where you have offices
-	https://raw.githubusercontent.com/aschneiderman/d3_sandwich/gh-pages/sandwiches/Abstract_Map_1/abstract_state.js
-	https://raw.githubusercontent.com/aschneiderman/d3_sandwich/gh-pages/sandwiches/Abstract_Map_1/abstract_state.html
-  - Of rooms in a building
-
-Miss Melissa - Animating text: Ms. Melissa's Dash-Your-Hopes Board
-http://aschneiderman.github.io/a-taste-of-d3/03-animation/03-30-Text-Ms-Melissa.html
-
-An example of what I could do with skull (have parts light up?)(funny thing on anxieties?)
-https://www.good.is/infographics/vitamin-atlas#open
-
-Animated building of a skyline
-https://www.nationalgeographic.com/new-york-city-skyline-tallest-midtown-manhattan/
-
-
-
-Models
-Pizza
-https://sketchfab.com/3d-models/pizza-40d50989fec1460f8838b608d999ccd0
-
-Tool pack
-https://sketchfab.com/3d-models/tools-pack-free-751df614c64f4cbeb4d9f9ea611e5715
-
-Tools 2
-https://sketchfab.com/3d-models/lowpoly-tools-low-resolution-e60923b56a3849bf8f74fa51f6c849f8
-
-Fruits-vegetables
-https://sketchfab.com/3d-models/lowpoly-fruits-dfcd54c92f6b43adb6c72fd7fb9f0c0d
-
-sky house
-https://sketchfab.com/3d-models/stylised-sky-player-home-dioroma-6597e6c9a5184f07a638ac33c08c2ad5

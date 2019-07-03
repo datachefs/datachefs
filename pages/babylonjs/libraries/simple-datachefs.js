@@ -19,11 +19,14 @@ function simpleRunScene(scene, engine) {
     window.addEventListener('resize', function(){ engine.resize(); } );     // If the user resizes the browser, update the screen
 };
 
-function simpleSphere (name, x, y, z, options) {
-    var ball = BABYLON.Mesh.CreateSphere(name, 1, 1, scene);
+function simpleSphere (name, x, y, z, options, scene) {
+// simpleSphere: helper function to hide the details of creating a sphere and the material that covers it
+    var diameter =  (options.diameter === undefined) ?      1                               : options.diameter;
+    var color =     (options.color === undefined) ?         new BABYLON.Color3.Black()      : options.color;
+    var ball = BABYLON.MeshBuilder.CreateSphere(name, {diameter: diameter}, scene);
     ball.position = new BABYLON.Vector3(x, y, z); 
     var myMaterial = new BABYLON.StandardMaterial("myMaterial", scene);
-    myMaterial.diffuseColor =  new BABYLON.Color3.Teal();
+    myMaterial.diffuseColor =  color;
     ball.material = myMaterial;
     return ball;
 };
@@ -55,4 +58,15 @@ function simpleTextBlock(text, options, scene) {
     advancedTexture.addControl(guiText);
 
     return guiText;
+};
+
+
+function simpleAnimation (name, methodToAnimate, numberFrames, timeline)  {
+    var animation = new BABYLON.Animation(name, methodToAnimate, numberFrames, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT);
+    var keys = [];
+    for (let i = 0; i < timeline.length; i++) {
+        keys.push(timeline[i]);
+    };
+    animation.setKeys(keys);
+    return animation;
 };
