@@ -4,7 +4,7 @@ title: 'Creative Data Visualizations: Proof of Concept'
 image: cupcakes-fancy-white-pink.jpg
 ---
 
-**UNDER CONSTRUCTION** 
+  * * UNDER CONSTRUCTION * * 
 
 <p> The following are a few simple data visualization experiments. Most of them don't follow dataviz best practices, and they need work to make them prettier. The purpose of these examples is to rough out what's involved in doing a data visualization using BabylonJS. </p>
 
