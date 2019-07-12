@@ -31,12 +31,12 @@ var delayCreateScene = function () {
        
 
 
-        // scene.getMeshByID("node_id36").position = new BABYLON.Vector3(-0.2, -0.424, 0.27);
-        // scene.getMeshByID("node_id38").position = new BABYLON.Vector3(-0.2, -0.454, 0.27);
-        // scene.getMeshByID("node_id40").position = new BABYLON.Vector3(-0.2, -0.514, 0.27);
-        // scene.getMeshByID("node_id44").position = new BABYLON.Vector3(-0.2, -0.286, 0.27);
-        // scene.getMeshByID("node_id46").position = new BABYLON.Vector3(-0.2, -0.237, 0.27);
-        // scene.getMeshByID("node_id48").position = new BABYLON.Vector3(-0.2, -0.385, 0.27);
+        scene.getMeshByID("node_id36").position = new BABYLON.Vector3(-0.2, -0.424, 0.27);
+        scene.getMeshByID("node_id38").position = new BABYLON.Vector3(-0.2, -0.454, 0.27);
+        scene.getMeshByID("node_id40").position = new BABYLON.Vector3(-0.2, -0.514, 0.27);
+        scene.getMeshByID("node_id44").position = new BABYLON.Vector3(-0.2, -0.286, 0.27);
+        scene.getMeshByID("node_id46").position = new BABYLON.Vector3(-0.2, -0.237, 0.27);
+        scene.getMeshByID("node_id48").position = new BABYLON.Vector3(-0.2, -0.385, 0.27);
 
 
 
@@ -48,26 +48,26 @@ var delayCreateScene = function () {
 
 
 
-        // var i = 0;
-        // var y = -0.15
-        // console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
-        // scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
+        var i = 0;
+        var y = -0.15
+        console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
+        scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
 
-        // i = 1;
-        // y = -0.19;
-        // console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y,"\n");
-        // scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
+        i = 1;
+        y = -0.19;
+        console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y,"\n");
+        scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
 
 
-        // i = 2;
-        // y = -0.24;
-        // console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
-        // scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
+        i = 2;
+        y = -0.24;
+        console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
+        scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
 
-        // i = 9;
-        // y = 0.0;
-        // console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
-        // scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
+        i = 9;
+        y = 0.0;
+        console.log("\n", sandwich[i].name, sandwich[i].id, 'is height', y, "\n");
+        scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2, y, 0.27);
 
 
         var sandwichY = -0.15;
@@ -82,10 +82,7 @@ var delayCreateScene = function () {
 
         for (let i = 0; i < 9; i++) {
             y = list[i];
-            console.log("\n", sandwich[i].name, ": y is", y, '(Should be',list[i] ,  ') height is', 
-            scene.getMeshByID(sandwich[i].id).getVerticesData(BABYLON.VertexBuffer.PositionKind),
-            
-            "\n");
+            console.log("\n", sandwich[i].name, ": y is", y, '(Should be',list[i] ,  ') height is', sandwich[i].height, "\n");
             scene.getMeshByID(sandwich[i].id).position = new BABYLON.Vector3(-0.2,  y, 0.27);
             sandwichY = sandwichY - sandwich[i].height;            
         };
