@@ -11,6 +11,7 @@ image: cupcakes-fancy-white-pink.jpg
 <ul>
 <li> Simple visualization using data: <a href="dataviz/goals/index.html">Goals</a></li>
 <li> Animation:  <a href="dataviz/engagement/index.html">Member engagement over time</a></li>
+<li> Animation:  <a href="dataviz/moores-law/index.html">Moore's Law</a></li>
 <!-- <li>Animation: <a href="dataviz/email-optouts/index.html">Email opt outs</a></li> -->
 <li> 3D Graphic Objects:  <a href="dataviz/sandwich/index.html">Calories in a sandwich</a></li>
 </ul>
