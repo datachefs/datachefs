@@ -1,58 +1,67 @@
 
+// Get set up
 var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 var delayCreateScene = function () {
     
     var scene = new BABYLON.Scene(engine);  
-    scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
-
-
-    //NOTE:
-    //Name of the animation I want: idle. Can also try flight_path_1, _2, etc.
-
-    BABYLON.SceneLoader.ImportMesh("", "", "robot-head.glb", scene, function (meshes) {          
+        // Set up a basic scene, including a camera and lighting
+        var scene = new BABYLON.Scene(engine);
         scene.createDefaultCameraOrLight(true, true, true);
-        var head = meshes[0];
+        scene.cameras[0].radius = 20;                   // Move the camera back so it's easier to see everything in the scene
+        scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
 
-        scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(0.01, 0.01, 0.01);
+    // BABYLON.SceneLoader.ImportMesh("", "", "sandwich.glb", scene, function (meshes) {     
+    BABYLON.SceneLoader.ImportMesh("", "", "robot-head.glb", scene, function (meshes) {          
 
-        var sphere = BABYLON.Mesh.CreateSphere('mySphere', 10, 10, scene);
-        sphere.position = new BABYLON.Vector3(-10, 0, 0); 
-        // var year = simpleTextBlock('2015', {x: -30, y: 10, z:0}, scene);    
+        var robot =  scene.getMeshByID("node_id5");
+        // var  scale = (computing[0].transistors /  computing[lastYear].transistors) / 2;
+        robot.scaling =   new BABYLON.Vector3(0.1, 0.1, 0.1);
+        // scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
+        var yearTitle = simpleTextBlock('', {x: 0, y: 6, z:0,
+            fontSize: "24px", width: "150px", height:  "150px"  }, scene);   
 
-        // console.log(year);
-        // year.text = '1999';
+        var computing = [
+            {year: '1970', transistors: 2000},
+            {year: '1980', transistors: 10000},
+            {year: '1990', transistors: 50000}
 
-        // // Rotate the plane so we see its side
-        // airplane.rotationQuaternion = new BABYLON.Quaternion(0, 0.7575649843840495, 0, -0.6527597524627226);
-        // airplane.position.y  = -0.1;
-        // var animation = scene.animationGroups[0];   // Grab the first animation, which is for flying straight
-        // console.log();
-        // scene.animationGroups[0].speedRatio = 0;
+        ];
 
-
-
-
-        var interval = 100;
+        var interval = 30;
+        var lastYear = computing.length - 1;
+        var finalTime = interval * (lastYear + 1);
+        var finalTransistor = computing[lastYear].transistors;
+        console.log(finalTime, lastYear, computing[lastYear]);
         var time = 0;
+        var scale = 0.1;
+        var i = 0;
 
-        // scene.beforeRender = () => {
-        //     time = time + 1;
+        function calculateScale(startValue, finalValue, percent) {
+            return  (finalValue - startValue);
+        }
 
-        //     if (time > 600) {
-        //         return scene;
-        //     };
-        //     if (time % interval == 0 )  {
-        //         console.log(time);
-        //         animation.speedRatio = Math.random();
-        //     };
-        //     // airplane.position.y  = airplane.position.y + (0.01 - (Math.random() * 0.02));
 
-        //     // airplane.rotation.y += 0.01;
-        //     // console.log( airplane.position.y);
-        // };
+        scene.beforeRender = () => {
+            time = time + 1;
+            if (time <= finalTime){
+                scale = (computing[i].transistors /  computing[lastYear].transistors) / 2;
+                scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
+                if (time % interval == 0 )  {
+                    console.log(time, scale);
+                    yearTitle.text = 'Year:' +  computing[i].year;
+                    i = i + 1;
+                };
+            }
+            if (time > 600) {
+                return scene;
+            };
+        };
         
+
+        
+
     });
 
     return scene;
@@ -62,7 +71,7 @@ var delayCreateScene = function () {
 var scene = delayCreateScene();
 scene.createDefaultCamera()
 
-scene.debugLayer.show();
+// scene.debugLayer.show();
 
 engine.runRenderLoop( function(){ scene.render(); } );
 window.addEventListener('resize', function(){ engine.resize(); } );     // If the user resizes the browser, update the screen
