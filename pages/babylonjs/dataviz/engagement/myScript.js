@@ -85,14 +85,15 @@ var createScene = function () {
 
         // Create the animations
         var offset = Math.round(Math.random() * 10);
-        var animationX = simpleAnimation("movingball", "position.x", 30, [ {frame: 1+offset, value: firstStatusX}, 
-            {frame: 40, value: offset}, {frame: 60, value: 20+offset}, {frame: 90, value: 40}] );
+        var animationX = simpleAnimation("movingball", "position.x", 30, [ 
+            {frame: 1+offset, value: firstStatusX},     {frame: 80, value: offset}, 
+            {frame: 120, value: 20+offset},              {frame: 180, value: 40}] );
 
         var animationY = simpleAnimation("movingBallY", "position.y", 30, [
-            {frame: 0, value: firstStatusY}, {frame: 30 + offset, value: calculateStatusY(path[1])}, 
-            {frame: 60 + offset, value: calculateStatusY(path[2])}, {frame: 90 + offset, value: calculateStatusY(path[3])}  ] ); 
+            {frame: 0, value: firstStatusY},                            {frame: 60 + offset, value: calculateStatusY(path[1])}, 
+            {frame: 120 + offset, value: calculateStatusY(path[2])},     {frame: 180 + offset, value: calculateStatusY(path[3])}  ] ); 
 
-        scene.beginDirectAnimation(balls[i], [animationX, animationY], 0, 100, true);
+        scene.beginDirectAnimation(balls[i], [animationX, animationY], 0, 200, true);
     };
 
 
@@ -121,3 +122,17 @@ simpleRunScene(scene, engine);
 // // or
 // var backwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, -gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
 // character.moveWithCollisions(backwards);
+
+
+
+
+// var offset = Math.round(Math.random() * 10);
+// var animationX = simpleAnimation("movingball", "position.x", 30, [ 
+//     {frame: 1+offset, value: firstStatusX},     {frame: 40, value: offset}, 
+//     {frame: 60, value: 20+offset},              {frame: 90, value: 40}] );
+
+// var animationY = simpleAnimation("movingBallY", "position.y", 30, [
+//     {frame: 0, value: firstStatusY},                            {frame: 30 + offset, value: calculateStatusY(path[1])}, 
+//     {frame: 60 + offset, value: calculateStatusY(path[2])},     {frame: 90 + offset, value: calculateStatusY(path[3])}  ] ); 
+
+// scene.beginDirectAnimation(balls[i], [animationX, animationY], 0, 200, true);
