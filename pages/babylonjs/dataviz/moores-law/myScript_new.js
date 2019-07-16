@@ -4,25 +4,6 @@ console.log("Here we go");
 var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
-var computing = [
-    {year: 1970, transistors:    2000},
-    {year: 1980, transistors:   10000},
-    {year: 1990, transistors:   50000},
-    {year: 1995, transistors:  200000},
-    {year: 2000, transistors:  600000},
-    {year: 2005, transistors: 1000000}
-];
-
-var lastYear = computing.length - 1;
-var maxTransistors = computing[lastYear].transistors;
-// console.log(lastYear, computing[lastYear].year);
-
-function calculateScale(current) {
-    var lastYear = computing.length - 1;
-    return computing[current].transistors / computing[lastYear].transistors * 2;
-}
-
-
 var createScene = function () {
     
     var scene = new BABYLON.Scene(engine);  
@@ -41,29 +22,35 @@ var createScene = function () {
         // scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
         var titleLabel = simpleTextBlock("Why Moore's Law Matters", {x: 0, y: 7, z:0,
             fontSize: "12px", width: "150px", height:  "150px"  }, scene);   
-        var yearLabel = simpleTextBlock('Test', {x: 0, y: 6, z:0,
+        var yearLabel = simpleTextBlock('Test', {x: 0, y: 4, z:0,
             fontSize: "24px", width: "150px", height:  "150px"  }, scene);   
         var frequencyLabel = simpleTextBlock('Frequency', {x: 0, y: 5, z:0,
             fontSize: "24px", width: "150px", height:  "150px"  }, scene);   
 
+        var computing = [
+            {year: 1970, transistors:    2000},
+            {year: 1980, transistors:   10000},
+            {year: 1990, transistors:   50000},
+            {year: 1995, transistors:  200000},
+            {year: 2000, transistors:  600000},
+            {year: 2005, transistors: 1000000}
+        ];
 
-        for (let j = 0; j < computing.length; j++) {
-            console.log(j, ': Scale is ', calculateScale(j));
-            
-        }
+        var lastYear = computing.length - 1;
+        var maxTransistors = computing[lastYear].transistors;
+        console.log(finalTime, lastYear, computing[lastYear]);
+
         var scale = 0.1;
         var i = 0;
 
-        yearLabel.text = 'Year:' +  computing[i].year;        
-        frequencyLabel.text = computing[i].transistors.toLocaleString();
 
-
-        // scale = 0.1;
-        // // scale = (computing[i].transistors /  computing[lastYear].transistors) / 2;
-        // scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
-        // console.log(time, scale);
-
-        // i = i + 1;
+        scale = 0.1;
+        // scale = (computing[i].transistors /  computing[lastYear].transistors) / 2;
+        scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
+        console.log(time, scale);
+        // yearLabel.text = computing[i].year.toLocaleString();
+        yearLabel.text = '2019';
+        i = i + 1;
 
 
 //         scene.beginDirectAnimation(box, [yRot], 0, 2 * frameRate, false, 1, nextAnimation);
