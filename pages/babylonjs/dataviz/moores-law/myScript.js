@@ -1,9 +1,35 @@
-console.log("Here we go");
+
+// NOTE: data Was put together by Karl Rupp and is located at  https://raw.githubusercontent.com/karlrupp/microprocessor-trend-data/master/42yrs/transistors.dat
+// You can read his analysis of it at https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/
 
 // Get set up
 var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
+// // Parse local CSV file
+// Papa.parse("history.csv", {
+// 	complete: function(results) {
+// 		console.log("Finished:", results.data);
+// 	}
+// });
+
+// var csv = URL.createObjectURL(new Blob([
+//     `foo,bar,baz
+//   12,43,21
+//   45,54,21
+//   87,13,17
+//   98,69,17`
+//   ]));
+  
+//   d3.csv(csv).then(function(data) {
+//     console.log(data.filter(function(d, i) {
+//       return i < 2;
+//     }));
+//   })
+
+// d3.csv("history.csv").then(function(data) {
+//     console.log(data); // [{"Hello": "world"}, …]
+//   });
 var computing = [
     {year: 1970, transistors:    2000},
     {year: 1980, transistors:   10000},
@@ -14,12 +40,14 @@ var computing = [
 ];
 
 var lastYear = computing.length - 1;
-var maxScale = 1.25;
+var maxScale = 1.2;
 
 function calculateScale(current) {
     var lastYear = computing.length - 1;
     return computing[current].transistors / computing[lastYear].transistors * maxScale + 0.005;
 }
+
+
 
 
 var createScene = function () {
@@ -31,8 +59,14 @@ var createScene = function () {
     scene.cameras[0].radius = 20;                   // Move the camera back so it's easier to see everything in the scene
     scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
     
+
+
+
+
     BABYLON.SceneLoader.ImportMesh("", "", "robot-head.glb", scene, function (meshes) {          
         
+
+
 
         var robot =  scene.getMeshByID("node_id5");
         robot.position.y = -5;
@@ -40,9 +74,9 @@ var createScene = function () {
         console.log( 'Starting Scale:', scale);
         scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
 
-        var titleLabel = simpleTextBlock("Why Moore's Law Matters", {x: 0, y: 7.5, z:0, fontSize: "36px", width: "150px", height:  "150px"  }, scene);   
-        var yearLabel = simpleTextBlock('Test', {x: 0, y: -6, z:0, fontSize: "24px", width: "150px", height:  "150px"  }, scene);   
-        var frequencyLabel = simpleTextBlock('Frequency', {x: 0, y: -7, z:0, fontSize: "24px", width: "150px", height:  "150px"  }, scene);   
+        var titleLabel = simpleTextBlock("Why Moore's Law Matters", {x: 0, y: 7.5, z:0, fontSize: "36px", width: "550px", height:  "150px"  }, scene);   
+        var yearLabel = simpleTextBlock('Test', {x: 0, y: -6, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
+        var frequencyLabel = simpleTextBlock('Frequency', {x: 0, y: -7, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
 
         var i = 0;
         var lastScale = scale;
@@ -55,7 +89,7 @@ var createScene = function () {
                 return 1;
             };
             yearLabel.text = 'Year: ' +  computing[i].year;        
-            frequencyLabel.text = 'Transistors/chip: ', computing[i].transistors.toLocaleString();
+            frequencyLabel.text = 'Transistors/chip: ' +  computing[i].transistors.toLocaleString();
 
             scale = calculateScale(i);
             console.log("lastscale:", lastScale, "scale:", scale);
