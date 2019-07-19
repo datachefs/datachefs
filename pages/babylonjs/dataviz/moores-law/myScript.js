@@ -2,53 +2,11 @@
 // NOTE: data Was put together by Karl Rupp and is located at  https://raw.githubusercontent.com/karlrupp/microprocessor-trend-data/master/42yrs/transistors.dat
 // You can read his analysis of it at https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/
 
+// NOTE: check this data against other sources
+
 // Get set up
 var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
-
-// // Parse local CSV file
-// Papa.parse("history.csv", {
-// 	complete: function(results) {
-// 		console.log("Finished:", results.data);
-// 	}
-// });
-
-// var csv = URL.createObjectURL(new Blob([
-//     `foo,bar,baz
-//   12,43,21
-//   45,54,21
-//   87,13,17
-//   98,69,17`
-//   ]));
-  
-//   d3.csv(csv).then(function(data) {
-//     console.log(data.filter(function(d, i) {
-//       return i < 2;
-//     }));
-//   })
-
-// d3.csv("history.csv").then(function(data) {
-//     console.log(data); // [{"Hello": "world"}, …]
-//   });
-var computing = [
-    {year: 1970, transistors:    2000},
-    {year: 1980, transistors:   10000},
-    {year: 1990, transistors:   50000},
-    {year: 1995, transistors:  200000},
-    {year: 2000, transistors:  600000},
-    {year: 2005, transistors: 1000000}
-];
-
-var lastYear = computing.length - 1;
-var maxScale = 1.2;
-
-function calculateScale(current) {
-    var lastYear = computing.length - 1;
-    return computing[current].transistors / computing[lastYear].transistors * maxScale + 0.005;
-}
-
-
-
 
 var createScene = function () {
     
@@ -60,57 +18,73 @@ var createScene = function () {
     scene.clearColor = BABYLON.Color3.White();       // Set the scene's background color
     
 
+    d3.csv("history.csv",function(data) {
+        var year, transistors;
+        for (let index = 0; index < 3; index++) {
+            year = Math.floor(data[index].year);
+            count = Math.floor(data[index].transistors*1000);
+            console.log("Row", index,"is:",year, "Transistors:", count);
+        }
+        console.log("\n\n And now for the main show!");
 
+        var lastYear = data.length - 1;
+        var maxScale = 1.2;
 
+        function calculateScale(current) {
+            var lastYear = data.length - 1;
+            return data[current].transistors / data[lastYear].transistors * maxScale + 0.005;
+        }
 
-    BABYLON.SceneLoader.ImportMesh("", "", "robot-head.glb", scene, function (meshes) {          
-        
+     BABYLON.SceneLoader.ImportMesh("", "", "robot-head.glb", scene, function (meshes) {          
 
+            var robot =  scene.getMeshByID("node_id5");
+            robot.position.y = -5.2;
+            var scale = calculateScale(0);
+            console.log( 'Starting Scale:', scale);
+            scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
 
+            var titleLabel = simpleTextBlock("Moore's Law & Why Exponential Growth Matters", {x: 0, y: 7.7, z:0, fontSize: "36px", width: "850px", height:  "150px"  }, scene);   
+            var yearLabel = simpleTextBlock('Test', {x: 0, y: -6, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
+            var frequencyLabel = simpleTextBlock('Frequency', {x: 0, y: -7, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
+            var sourceLabel  = simpleTextBlock('Source: Karl Rupp, "42 Years of Microprocessor Trend Data"', 
+                                {x: 0, y: -8, z:0, fontSize: "9px", width: "550px", height:  "150px"  }, scene);
+            var i = 0;
+            var lastScale = scale;
 
-        var robot =  scene.getMeshByID("node_id5");
-        robot.position.y = -5;
-        var scale = calculateScale(0);
-        console.log( 'Starting Scale:', scale);
-        scene.getMeshByID("node_id5").scaling = new BABYLON.Vector3(scale, scale, scale);
+            i = 0;
 
-        var titleLabel = simpleTextBlock("Why Moore's Law Matters", {x: 0, y: 7.5, z:0, fontSize: "36px", width: "550px", height:  "150px"  }, scene);   
-        var yearLabel = simpleTextBlock('Test', {x: 0, y: -6, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
-        var frequencyLabel = simpleTextBlock('Frequency', {x: 0, y: -7, z:0, fontSize: "24px", width: "550px", height:  "150px"  }, scene);   
+            function showYear() {
+                console.log('Year, lastYear:', i, lastYear);
+                if (i > lastYear) {
+                    return 1;
+                };
+                year = Math.floor(data[i].year);
+                transistors = Math.floor(data[i].transistors*1000); 
+                yearLabel.text = 'Year: ' +  year;        
+                frequencyLabel.text = 'Transistors/chip: ' +  transistors.toLocaleString();
 
-        var i = 0;
-        var lastScale = scale;
+                scale = calculateScale(i);
+                console.log("lastscale:", lastScale, "scale:", scale);
 
-        i = 0;
+                var animation = new BABYLON.Animation('animation', 'scaling', 30, BABYLON.Animation.ANIMATIONTYPE_VECTOR3, 
+                BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+                // BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT);
+                var keyframes = [ 
+                        { frame: 0,     value: new BABYLON.Vector3(lastScale, lastScale, lastScale) },
+                        { frame: 30,   value: new BABYLON.Vector3(scale, scale, scale) }
+                ];
+                animation.setKeys(keyframes);
+                robot.animations = [animation];
 
-        function showYear() {
-            console.log('Year, lastYear:', i, lastYear);
-            if (i > lastYear) {
-                return 1;
+                scene.beginAnimation(robot, 0, 30, false, 1, showYear);
+
+                lastScale = scale;
+                i = i + 1;
             };
-            yearLabel.text = 'Year: ' +  computing[i].year;        
-            frequencyLabel.text = 'Transistors/chip: ' +  computing[i].transistors.toLocaleString();
 
-            scale = calculateScale(i);
-            console.log("lastscale:", lastScale, "scale:", scale);
+            showYear();
 
-            var animation = new BABYLON.Animation('animation', 'scaling', 60, BABYLON.Animation.ANIMATIONTYPE_VECTOR3, 
-            BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-            // BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT);
-            var keyframes = [ 
-                    { frame: 0,     value: new BABYLON.Vector3(lastScale, lastScale, lastScale) },
-                    { frame: 100,   value: new BABYLON.Vector3(scale, scale, scale) }
-            ];
-            animation.setKeys(keyframes);
-            robot.animations = [animation];
-            scene.beginAnimation(robot, 0, 100, false, 1, showYear);
-
-            lastScale = scale;
-            i = i + 1;
-        };
-
-        showYear();
-
+        });
     });
 
     return scene;
