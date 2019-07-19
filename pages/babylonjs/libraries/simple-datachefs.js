@@ -51,8 +51,8 @@ function simpleTextBlock(text, options, scene) {
     guiText.text = text;
     guiText.color =     (options.color === undefined) ?     "black"     : options.color;
     guiText.fontSize =  (options.fontSize === undefined) ?  "72px"      : options.fontSize;
-    guiText.width =     (options.width === undefined) ?     "450px"     : options.width;
-    guiText.height =    (options.height === undefined) ?    "550px"     : options.height;
+    guiText.width =     (options.width === undefined) ?     "950px"     : options.width;
+    guiText.height =    (options.height === undefined) ?    "350px"     : options.height;
     // guiText.textWrapping= true;
     // guiText.lineSpacing = percentage;
     advancedTexture.addControl(guiText);
