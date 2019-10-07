@@ -2,7 +2,7 @@
 layout: content
 title: About Datachefs
 permalink: /about/
-image: pans-outdoors.jpg
+image: cookies-dataviz.jpg
 ---
 
 {Give overview of Datachefs strategy}

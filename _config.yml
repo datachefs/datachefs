@@ -9,10 +9,8 @@ navigation_links:
     link: 'about/'
 #  - name: Strategy
 #    link: 'strategy/'
-  - name: BabylonJS
-    link: 'babylonjs/'
-  - name: Learning Deep Learning
-    link: 'learning-deep-learning/'
+  - name: Blog
+    link: 'blog/'
   # - name: Links
     # link: 'links'
   - name: Makers All
