@@ -4,25 +4,35 @@ title: Can USDS Do for Data Science Power Users What DARPA Did for the Internet?
 permalink: /usds/
 ---
 
-Over the past decade, the tools for helping staff who aren't coders transform and analyze data have gotten more and more powerful. Even in machine learning/AI, we're in the early stages of "Auto ML" that lets power users do some of the work of data scientists.  But in the rush to build better tools, no one's addressing a major challenge: how can large organizations unleash this powerful tech without creating a hot mess? 
+Over the past decade, the tools for helping staff who aren't coders transform and analyze data have gotten more and more powerful. Even in machine learning and AI, "Auto ML" is just beginning to allow power users to do some work that only a few years ago required a highly skilled data scientist.  But in the rush to build better tools, no one's addressing a major challenge: how can large organizations unleash this powerful tech without creating a hot mess? 
 
-Based on my decades of field experience and my research at Makers All, I'm developing a solution I call Data Chefs. It's a framework for growing an organization's internal ecosystem that helps power users flourish, using an iterative approach that racks up small, strategic wins while building towards larger victories. And as a number of organizations do so, they can begin to pool resources.
+Based on decades of field experience and [my research at Makers All](https://toolkit.makersall.org), I'm developing a solution called [Data Chefs](/index.html). It's a framework for:
 
-USDS is in a unique position to exploit the potential power of Data Chefs.  Like the rest of the corporate world, Federal agencies have a huge unmet need for more data science & can't find enough data scientists to hire.  A Data Chefs approach would totally make sense — and it would leverage the fact that the federal govt has all these different govt agency ecosystems, so there’s a lot of room to get a big ROI.  
+- Growing an organization's internal ecosystem to help power users flourish, using an iterative, Agile approach that racks up small, strategic wins while building towards larger victories
+- Building an ecosystem across organizations so they can share knowledge and pool resources
+- Using this ecosystem across organizations to connect large organizations to the community, so communities from Harlem to Harlan County can also benefit
 
-A USDS Data Chefs initiative could have several other useful effects:
+USDS is in a unique position to exploit the potential power of Data Chefs: 
 
-__Spread Agile Practices__
-One of the core parts of Data Chefs is adapting Agile techniques to the needs of power users. In doing so, it could further USDS’ main mission by spreading Agile practices in a way that’s much easier to do.  
+#### 1) Help Address The Federal Government's Enormous Unmet Need for Analytics & Data Science
 
-- With Data Chefs, you’re helping handfuls of power users at a time, not trying to turn around a gianormous $$$$ govt software project.  
-- And just like 4H was in part used to sell modern agricultural practices to adults — if Timmy can grow 3x more on a tiny plot on your land, you can see with your own eyes that the techniques will work for your farm — Data Chefs would show what Agile do in  low risk way, which might open the eyes of mid level manager to trying out Agile in bigger projects.
+-  Like the corporate world, Federal agencies can't find or afford enough data scientists to meet their needs.  A Data Chefs approach could go a long way to filling that gap.
+- Because the government contains many large agencies, each of which has unique needs, USDS could take advantage of this scale to produce a big ROI.
+- As a result of that scale, USDS could leverage work by computer education researchers that has the potential to [radically reduce the learning curve](https://toolkit.makersall.org/pages/30-smooth/30-evangelize-research.html) from power user to data scientist or data engineer
+- USDS could leverage federal agency's work, from the Pentagon’s X Data project that's underwriting open source tools for data viz for huge amts of data to Extension Service's expertise in [community-oriented strategies for adopting new technical practices](https://toolkit.makersall.org/pages/10-intro/30-extension-citizenship-schools.html)
+- As USDS helped grow an ecosystem across agencies, it would create a resource that could also help large corporations, small businesses, and state and local government save time and money in addressing their data science needs
 
-__Leverage Work by Feds and Others__
-- Eventually, it could leverage a lot of work already being done by the Feds, such as the Pentagon’s X Data project (eg, open source tools for data viz for huge amts of data), the Pentagon’s support for community digital fabrication maker centers, etc
-- It could also leverage work by computer education researchers. Because the government operates on such a large scale,
 
-__Boost Data Science in Business Community and Local Government__
+#### 2) Spread Agile Practices
 
-__Lay the Groundwork for Creating Jobs and Businesses from Harlem to Harlan County__
-Makers All’s strategy calls for building collaborations between tech companies and community groups in Appalachia & elsewhere so that both benefit.   From the conversations I’ve had since my report came out, it’s become clear that I’ve got a chicken and egg problem:  both sides find it too intimidating to jump first, cause they’re dubious that the other will follow. One of the driving forces behind Data Chefs is to to get the most innovative parts of the govt plus their most innovative, agile business partners to jump, then getting tech companies and community  groups to follow should be much, much easier.
+One of the core strategies of Data Chefs is adapting Agile techniques to the needs of power users. In doing so, it could further USDS’ main mission of spreading Agile practices:  
+
+- With Data Chefs, you’re helping handfuls of power users at a time, not trying to turn around a massive, high-risk software project, so it should be easier to convince agencies to get their feet wet with Agile practices.
+- Just like 4H was used in part to sell modern agricultural practices to adults — if Timmy can grow 3x more corn on a tiny plot of his family's land, his parents can see that these techniques will work for their farm — Data Chefs is a low risk way to show mid-level managers what Agile do, which might make them more comfortable trying out Agile on larger projects.
+
+#### 3) Lay the Groundwork for Creating Emerging Tech Jobs and Businesses in Communities That Are Hurting
+
+- Makers All’s [strategy](https://toolkit.makersall.org/pages/strategies.html) calls for building [two](https://toolkit.makersall.org/pages/30-smooth/10-culture-community-coding-UX.html) [types](https://toolkit.makersall.org/pages/50-support/10-community-support.html#explore-connecting-community-and-workplace-support) of collaborations between community groups and tech & large corporations so both benefit.   From the conversations I’ve had since our flagship report was published, it’s become clear that this strategy has a chicken and egg problem:  both sides find it too intimidating to jump first, because they’re dubious the other will follow. 
+- One of Data Chefs' goals is to create an intermediate step to reduce the gap --  it's a lot less intimidating to take on training nontechies sales staff than it is to train ex-miners, and it's less intimidating to develop power users than professional programmers.
+- If USDS helped grow an ecosystem that spans not only across federal agencies but eventually across tech companies & large corporations as well as community groups, it could open the door to pulling off the same trick with AI and robotics more generally, AR/VR, digital fabrication, and other emerging tech that's going to produce an enormous amount of wealth over the next 20 years.
+-  As a resuly, communities from Appalachia to Compton would have a shot at creating jobs and small businesses that could be a critical foundation in revitalizing their community, ushering in a new era of unprecedented prosperity.
