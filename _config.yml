@@ -7,8 +7,10 @@ description:  Description of this site
 navigation_links:
   - name: About
     link: 'about/'
-#  - name: Strategy
-#    link: 'strategy/'
+  - name: Principles
+    link: 'principles/'
+  - name: Strategy
+    link: 'strategy/'
   - name: Blog
     link: 'blog/'
   # - name: Links

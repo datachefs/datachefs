@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  Datachefs Blog
+image: cupcakes-reflection.jpg
 permalink: /blog/
 ---
 
@@ -9,6 +10,15 @@ permalink: /blog/
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  {%- if page.image -%}
+  <div class="main-image">
+    <img src="{{'/assets/images/' | append:  page.image | relative_url }} ">
+    {%- if page.image-citation -%}
+      <div class="main-image-citation">{{ page.image-citation }} </div>
+    {%- endif -%}
+
+  </div>  
+  {%- endif -%}
 
   <div class="post-content">
 

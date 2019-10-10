@@ -11,6 +11,11 @@ In Makers All’s [flagship report](https://toolkit.makersall.org), [we argue](h
 > 
 > Staff in corporations and other large organizations don’t have the same needs as people in the community. But there are many areas where they may overlap. As communities are developing a rich ecosystem for their members, it may be worth exploring if there are ways to jointly address their needs. 
 
-Data Chefs is a pilot project to develop a framework for doing this in analytics and data science by growing organizational ecosystems of power users / "[citizen data scientists](https://toolkit.makersall.org/pages/50-support/10-community-support.html#explore-connecting-community-and-workplace-support") that are connected to a broader ecosystem.
+Data Chefs is a pilot project to develop a framework for doing this in analytics and data science by growing organizational ecosystems of power users / "[citizen data scientists](https://toolkit.makersall.org/pages/50-support/10-community-support.html#explore-connecting-community-and-workplace-support)" that are connected to a broader ecosystem.
 
-( [earlier incarnation](https://dchefs.wordpress.com) of Data Chefs)
+Data Chefs was developed by Anders Schneiderman, Makers All’s director. He is a sociologist turned techie, with over 30 years of experience as a developer, software project manager and adult tech trainer at labor unions, corporations, nonprofits, and government. He can be reached by email (aschneiderman a.t makersall do.t org) or Twitter (@raschneiderman).
+
+If you're interested in trying out Data Chefs in your organization, please contact Anders at aschneiderman a.t makersall do.t org.
+
+
+<!-- ( [earlier incarnation](https://dchefs.wordpress.com) of Data Chefs) -->

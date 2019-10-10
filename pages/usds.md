@@ -1,17 +1,17 @@
 ---
 layout: content
-title: Can USDS Do for Data Science Power Users What DARPA Did for the Internet?
+title: Can Data Chefs Help USDS Revolutionize How Our Government Uses Data Science?
 permalink: /usds/
 ---
 
 
-_NOTE: This project isn't the typical kind of project USDS takes on, but I thought it might raise some possibilities about what you might consider; even if it's not the right fit, it might inspire a project that is a good fit. It also gives you a feel for how I think through complex problems._
+_NOTE: This project isn't the typical kind of project USDS takes on, but I thought it might raise some possibilities about what you might consider; even if it's not the right fit, it might inspire a project that is. It also gives you a feel for how I think through complex problems._
 
 Over the past decade, the tools for helping staff who aren't coders transform and analyze data have gotten more and more powerful. Even in machine learning and AI, "Auto ML" is just beginning to allow power users to do some work that only a few years ago required a highly skilled data scientist.  
 
 But in the rush to build better tools, no one's addressing a major challenge: how can large organizations unleash this powerful tech on scale without creating a hot mess?  For example, as lots of power users take on responsibility for more complex data work, if they don't take on at least a lightweight version of version control, lifecycle management, data governance, etc., we'll end up replacing a rigid, centralized monolith with a decentralized Wild West.
 
-Based on decades of field experience and [my research at Makers All](https://toolkit.makersall.org), I'm developing a solution called [Data Chefs](/index.html). It's a framework for:
+Based on [my research at Makers All](https://toolkit.makersall.org) and decades of field experience, I'm developing a solution called [Data Chefs](/index.html). It's a framework for:
 
 - Growing an organization's internal ecosystem to help power users flourish, using an iterative, Agile approach that racks up small, strategic wins while building towards larger victories
 - Building an ecosystem across organizations so they can share knowledge, pool resources, and collaboratively work to [smooth the learning curve](https://toolkit.makersall.org/pages/30-smooth/00-index.html) from beginner to power user to data scientist/engineer
