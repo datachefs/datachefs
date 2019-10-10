@@ -5,7 +5,7 @@ permalink: /usds/
 ---
 
 
-_NOTE: This project isn't the typical kind of project USDS takes on, but I thought it might raise some possibilities about what you might consider; even if it's not the right fit, it might inspire a project that is. It also gives you a feel for how I think through complex problems._
+_NOTE: This project isn't the typical type of project USDS takes on, but I thought it might be of interest you -- especially re: your objective to expand the use of common platforms, services, and tools.  Even if this project isn't the right fit, it might inspire a project that is. It also gives you a feel for how I think through complex tech and organizational problems._
 
 Over the past decade, the tools for helping staff who aren't coders transform and analyze data have gotten more and more powerful. Even in machine learning and AI, "Auto ML" is just beginning to allow power users to do some work that only a few years ago required a highly skilled data scientist.  
 
@@ -20,7 +20,7 @@ Based on [my research at Makers All](https://toolkit.makersall.org) and decades 
 USDS is in a unique position to exploit the potential power of Data Chefs: 
 
 #### 1) Help Address The Federal Government's Enormous Unmet Need for Analytics & Data Science
--  Like much of the corporate world, Federal agencies can't find or afford enough data scientists to meet their needs. A Data Chefs approach could fill part of this by radically increasing the number of power users. And because the government operates on such a large-scale, USDS could also explore leveraging work by computer education researchers that has the potential to [radically reduce the learning curve](https://toolkit.makersall.org/pages/30-smooth/30-evangelize-research.html) from power user to data scientist/engineer
+-  Like much of the corporate world, Federal agencies can't find or afford enough data scientists to meet their needs. A Data Chefs approach could fill part of this by radically increasing the number of high performing power users. And because the government operates on such a large-scale, USDS could also explore leveraging work by computer education researchers that has the potential to [radically reduce the learning curve](https://toolkit.makersall.org/pages/30-smooth/30-evangelize-research.html) from power user to data scientist/engineer
 - Data Chefs could create opportunities to develop a more diverse federal data analytics/data science staff. For example, administrative staff tend to be more diverse, and they are great pool for recruiting power users, some of whom could eventually be trained to become data scientists and engineers.
 
 

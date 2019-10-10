@@ -1,6 +1,6 @@
 ---
 layout: content
-title: The 7 Principles for Growing a Thriving Data Chefs Ecosystem
+title: 7 Principles for Growing a Thriving Power User Ecosystem
 image: vegetables-corn.jpg
 permalink: /principles/
 
@@ -18,5 +18,3 @@ Data Chefs is governed by 7 principles:
 
 _NOTE: Data Chefs is a work in progress. This is v.0.2_
 
-
-([Principles dump](/pages/principles/principles.html))

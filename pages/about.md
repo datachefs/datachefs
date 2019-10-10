@@ -4,14 +4,9 @@ title: About Datachefs
 permalink: /about/
 image: sandwich-rustic.jpg
 ---
+Data Chefs is a framework to help organizations unleash the power of analytics and data science by growing organizational ecosystems of power users / "[citizen data scientists](https://blogs.gartner.com/carlie-idoine/2018/05/13/citizen-data-scientists-and-why-they-matter/)" -- and to do so in a way that in the long term will also help the community.
 
-In Makers All’s [flagship report](https://toolkit.makersall.org), [we argue](https://toolkit.makersall.org/pages/50-support/10-community-support.html#explore-connecting-community-and-workplace-support) there’s a way for  corporations and large nonprofits to design their tech training/retraining strategy  so it also benefits marginalized communities:
-
-> Between waves of automation and waves of new tech, corporations are going to face a never-ending need to train and retrain their staff. Currently, most simply aren’t equipped to do so.
-> 
-> Staff in corporations and other large organizations don’t have the same needs as people in the community. But there are many areas where they may overlap. As communities are developing a rich ecosystem for their members, it may be worth exploring if there are ways to jointly address their needs. 
-
-Data Chefs is a pilot project to develop a framework for doing this in analytics and data science by growing organizational ecosystems of power users / "[citizen data scientists](https://toolkit.makersall.org/pages/50-support/10-community-support.html#explore-connecting-community-and-workplace-support)" that are connected to a broader ecosystem.
+Data Chefs is based on decades of field experience as well as [research by Makers All](https://toolkit.makersall.org).
 
 Data Chefs was developed by Anders Schneiderman, Makers All’s director. He is a sociologist turned techie, with over 30 years of experience as a developer, software project manager and adult tech trainer at labor unions, corporations, nonprofits, and government. He can be reached by email (aschneiderman a.t makersall do.t org) or Twitter (@raschneiderman).
 
