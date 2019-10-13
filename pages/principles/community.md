@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Harness the Power of Community
-image: cookies-frosted-many.jpg
+image: birds-chefs.jpg
 ---
 
 When organizations training and support their power users, they typically focus primarily on individuals -- even if they are training staff by department. But organizations aren't just composed of individuals. Humans are social creatures who are often part of rich, complex networks. 

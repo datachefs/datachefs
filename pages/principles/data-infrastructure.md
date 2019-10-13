@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Grow An Agile Data Infrastructure
-image: pans-outdoors.jpg
+image: cooking-toys.jpg
 ---
 
 If you're in an IT department, perhaps you've had an experience like this.

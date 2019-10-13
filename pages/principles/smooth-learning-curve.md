@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Continuously Smooth the Learning Curve
-image: toast.jpg
+image: making-cookies.jpg
 ---
 
 Too often, the path tools put power users on is pretty raggedy:

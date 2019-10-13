@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Strategy
-image: bread-sweet-zucchini.jpg
+image: make-baking.jpg
 permalink: /strategy/
 
 ---

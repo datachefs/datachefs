@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Don't Create a Solution, Grow an Ecosystem
-image: sandwich-egg.jpg
+image: breakfast-many.jpg
 ---
 
 It's easy to get sucked in by vendors or evangelists who tell you that their tool, language, or platform will solve all your problems. But for most organizations, one size doesn't fit all.

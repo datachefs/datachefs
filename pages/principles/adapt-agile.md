@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Adapt Agile Development Practices to Fit Power Users' Needs
-image: cupcakes-white-pretty.jpg
+image: boat-cooking.jpg
 ---
 
 If you need to whip up a simple bar graph, you don't need to know about version control, sprints, development lifecycles, etc. If you know how to use the tool, you can bang it out in a couple of minutes. If you're building it for someone else and they want a bunch of changes? That's another few minutes.
