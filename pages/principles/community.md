@@ -12,6 +12,6 @@ Makers All, the parent organization for Data Chefs, argues that our society woul
 - __Nurture Neighborhood Clubs__. Extension agents helped farming communities form neighborhood clubs and worked with clubs to ensure farmers got a steady stream of ideas about how they could improve their farming.  As a result, farmers weren't just hearing about an idea brought in by an outsider, they were learning while surrounded by their peers who spoke the same language and understood the realities they faced.  
 - __Foster Community Events__. Extension agents helped foster state fairs and other places where farmers could see demonstrations, compete to see who could use new techniques to grow the best crops, etc.
 
-Data Chefs' argues that:
-- Individual organizations should use a chopped down, lightweight version of Maker All's strategy that's designed to fit the needs of their organization and their staff 
-- As organizations begin to collaborate across ecosystems, start taking baby steps towards the more robust approach envisioned by Makers All
+Data Chefs argues that:
+- Individual organizations should use a chopped down, lightweight version of Maker All's strategy that's designed to fit the needs of their organization and staff 
+- As organizations begin to collaborate across ecosystems, start taking small steps towards the more robust approach envisioned by Makers All
