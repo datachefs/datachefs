@@ -15,3 +15,8 @@ Makers All, the parent organization for Data Chefs, argues that our society woul
 Data Chefs argues that:
 - Individual organizations should use a chopped down, lightweight version of Maker All's strategy that's designed to fit the needs of their organization and staff 
 - As organizations begin to collaborate across ecosystems, start taking small steps towards the more robust approach envisioned by Makers All
+
+## Example: Data Visualization Ambassadors(Divas)
+
+At the American Speech-Language-Hearing Association (ASHA), we created an initiative to increase the organization's data visualization literacy. To do so, we developed a network of users who we called
+Data Visualization Ambassadors ("Divas"), who we trained and supported in advocating for the effective use of data viz in their department. 
