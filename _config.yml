@@ -9,10 +9,10 @@ navigation_links:
     link: 'about/'
   # - name: 'The Road so Far'
   #   link: 'road/'
-  - name: Principles
-    link: 'principles/'
-  - name: Strategy
-    link: 'strategy/'
+  # - name: Principles
+  # link: 'principles/'
+  # - name: Strategy
+  # link: 'strategy/'
   # - name: Blog
   #   link: 'blog/'
   # # - name: Links
