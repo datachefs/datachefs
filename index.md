@@ -4,11 +4,9 @@ layout: content
 image: cookies-dataviz.jpg
 ---
 
-The more important data is to our economy, the more we need people who can slice, dice, and explain data. That's why the demand for folks who are good at working with data is almost insatiable.
+The more important data is to our economy, the more we need people who can slice, dice, and explain data. That's why today the demand for folks who are good at working with data is almost insatiable. 
 
-At the same time, the tools that let people who aren't coders transform and analyze data are getting more and more powerful. That's good news for companies --  and for folks who want an opportunity to break into the fast-growing field of tech.
-
-But we are still missing some ingredients to make this recipe a hit. We think the answer is Data Chefs.
+At the same time, the tools that let people who aren't coders transform and analyze data are getting more and more powerful. Even fields such as machine learning, which used to require many years of experience and often an advanced degree, are slowly opening up with the rise of tools such as "Auto ML."
 
 Data Chefs is a framework that helps organizations unleash the power of analytics and data science by growing an ecosystem of power users / "[citizen data scientists](https://blogs.gartner.com/carlie-idoine/2018/05/13/citizen-data-scientists-and-why-they-matter/)" -- and to do so in a way that in the long term will also help the community. It argues for:
 
