@@ -1,18 +1,23 @@
 ---
 title: Welcome to Data Chefs!
 layout: content
-image: cookies-dataviz.jpg
+image: datachefs.jpg
 ---
 
-The more important data is to our economy, the more we need people who can slice, dice, and explain data. That's why today the demand for folks who are good at working with data is almost insatiable. 
+These days, data is everywhere, and knowing how to slice and dice it can give you power over the world and can help you get a better job. So, a lot of folks are trying to democratize working with data.
 
-At the same time, the tools that let people who aren't coders transform and analyze data are getting more and more powerful. Even fields such as machine learning, which used to require many years of experience and often an advanced degree, are slowly opening up with the rise of tools such as "Auto ML."
+Most attempts to democratize data fall into one of two camps:
 
-Data Chefs is a framework that helps organizations unleash the power of analytics and data science by growing an ecosystem of power users / "[citizen data scientists](https://blogs.gartner.com/carlie-idoine/2018/05/13/citizen-data-scientists-and-why-they-matter/)" -- and to do so in a way that in the long term will also help the community. It argues for:
+1) __Microwaving a bag of popcorn__. Just point and click, and you can bang out a remarkably sophisticated analysis. But you don't understand what's going on. Your choices are limited to the products manufacturers make. And you can't experiment much.
 
-- Growing an organization's internal ecosystem to help power users flourish, using an iterative approach that racks up small, strategic wins while building towards larger victories
-- Building an ecosystem across organizations so they can share knowledge, pool resources, and collectively work to [smooth the learning curve](https://toolkit.makersall.org/pages/30-smooth/00-index.html) from beginner to power user to data scientist/engineer
-- Using this ecosystem across organizations to connect large organizations to the community, so communities can also benefit -- and in doing so, laying the groundwork to help communities from Harlem to Harlan County [benefit from the explosion of wealth](https://toolkit.makersall.org) that will be created by AI, AR/VR, and other forms of under window emerging tech over the next 20 years.
+2) __Butchering a pig__. There are commandline tools and SQL-focused tools that give you a lot of power. But they are intimidating as hell to most people.
+
+What if we made working with data more like making chocolate chip cookies?
+
+Baking cookies is easy, too, but the tools and knowledge you pick up give you a much wider range of food to cook. And unlike learning to microwave popcorn, learning how to bake cookies can put you on the path to becoming a good home cook or even a professional chef
+
+
+That's the goal of Data Chefs -- to help find ways of making working with data more accessible without __
 
 _NOTE: Data Chefs is a work in progress. This is v.0.3_
 
