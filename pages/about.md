@@ -4,7 +4,7 @@ title: About Datachefs
 permalink: /about/
 image: sandwich-rustic.jpg
 ---
-Data Chefs is a framework to help organizations unleash the power of analytics and data science by growing organizational ecosystems of power users / "[citizen data scientists](https://blogs.gartner.com/carlie-idoine/2018/05/13/citizen-data-scientists-and-why-they-matter/)" -- and to do so in a way that in the long term will also help the community.
+Data Chefs is a framework to help organizations unleash the power of analytics and data science by growing organizational ecosystems of power users, blue collar coders, analytics engineers, and data scientists -- and to do so in a way that in the long term will also help the community.
 
 Data Chefs is based on decades of field experience as well as [research by Makers All](https://toolkit.makersall.org).
 
