@@ -6,7 +6,7 @@ image: datachefs.jpg
 
 { *DRAFT* }
 
-The more important data is to our economy, the more we need people who can slice, dice, and explain data. The demand for people who are good at working with data is almost insatiable. And so many are trying to democratize working with data.
+The more important data is to our economy, the more we need people who can slice, dice, and explain it. Today, the demand for people who are good at working with data is almost insatiable. And so many are trying to democratize working with data.
 
 Most attempts to democratize data fall into one of two camps:
 
@@ -14,11 +14,14 @@ Most attempts to democratize data fall into one of two camps:
 
 2) __Butchering a Pig__.  There are tools where being able to write complex scripts can give users an incredible amount of power. But these tools are intimidating as hell to most people.
 
-What if we made working with data more like making chocolate chip cookies or baking cupcakes?
+What if we made learning to working with data more like learning to bake cupcakes?
 
-Baking cookies is easy, too, but the tools and knowledge you pick up give you a much wider range of food to cook. And unlike learning to microwave popcorn, learning how to bake cookies can put you on the path to becoming a good home cook or even a professional chef.
+It's pretty easy to learn how to make cupcakes, but the tools and knowledge you pick up give you a much wider range of food you could cook. And unlike learning to microwave popcorn, learning how to bake cupcakes can put you on the path to becoming a good home cook or even a professional chef.
 
-That's the goal of Data Chefs: to help find ways of making working with data more accessible to a much wider audience by smoothing the learning curve from beginner to power user to analytics engineer or data scientist -- and to do so in a way that over time will help communities from Harlem to Harlan County.
+Data Chefs is a project to help democratize working with data by:
+ - Helping [organizations](/pages/organizations.html) and [tool makers](/pages/toolmakers.html) smooth the learning curve from beginner to power user to analytics engineer or data scientist
+ - Laying the foundations to make paid data work more accessible to communities from Harlem to Harlan County
+
+In doing so, Data Chefs hopes to develop a model for helping communities [shape and benefit from the explosion of wealth](https://toolkit.makersall.org/) that will be created by AI/ML, VR/AR, and other emerging tech over the next 20-30 years.
 
 _NOTE: Data Chefs is a work in progress. This is v.0.25_
-
