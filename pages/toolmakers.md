@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Data Chefs for Tool Makers
-image: make-baking.jpg
+image: making-cookies.jpg
 permalink: /toolmakers/
 ---
 

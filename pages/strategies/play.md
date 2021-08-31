@@ -1,7 +1,8 @@
 ---
 layout: content
-title: Encourage Play
-image: cupcakes-fancy-white-pink.jpg
+title: Encourage Playfulness and Creativity
+# image: cupcakes-fancy-white-pink.jpg
+image: cupcakes-reflection.jpg
 ---
 
 For most people, using data feels intimidating and boring -- and working with data is often taught in a way that reinforces these feelings. 

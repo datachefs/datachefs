@@ -1,7 +1,8 @@
 ---
 layout: content
-title: Data Chefs For Organizations
-image: breakfast-many.jpg
+title: Data Chefs for Organizations
+image: cookies-dataviz.jpg
+# image: cookies-frosted-many.jpg
 permalink: /organizations/
 ---
 

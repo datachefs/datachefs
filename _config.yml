@@ -7,12 +7,10 @@ description:  Building a power user ecosystem that helps companies and the commu
 navigation_links:
   - name: About
     link: 'about/'
-  # - name: 'The Road so Far'
-  #   link: 'road/'
-  - name: Principles
-    link: 'principles/'
-  # - name: Strategy
-  # link: 'strategy/'
+  # - name: Principles
+    # link: 'principles/'
+  - name: Strategies
+    link: 'strategies/'
   # - name: Blog
   #   link: 'blog/'
   # # - name: Links
