@@ -4,6 +4,7 @@ title: Principles
 image: vegetables-corn.jpg
 permalink: /principles/
 ---
+
 Data Chefs is based on 4 principles:
 
 ### Main Ingredients
@@ -20,4 +21,3 @@ Data Chefs is based on 4 principles:
 - Encourage [Play](/pages/principles/play.html)
  -->
 
-_NOTE: Data Chefs is a work in progress. This is v.0.3_
