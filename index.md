@@ -20,7 +20,7 @@ It's pretty easy to learn how to make cupcakes, but the tools and knowledge you 
 
 Data Chefs is a project to help democratize working with data by:
  - Helping [organizations](/organizations/) and [tool makers](/toolmakers/) smooth the learning curve from beginner to power user to analytics engineer or data scientist
- - Laying the foundations to make paid data work more accessible to communities from Harlem to Harlan County
+ - Laying the foundations to make well paid data work more accessible to communities from Harlem to Harlan County
 
 In doing so, Data Chefs hopes to develop a model for helping communities [shape and benefit from the explosion of wealth](https://toolkit.makersall.org/) that will be created by AI/ML, VR/AR, and other emerging tech over the next 20-30 years.
 
