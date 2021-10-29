@@ -75,3 +75,29 @@
   padding: 20px;
   font-size: 150%;
 }
+
+
+/* override styles when printing */
+@media print {
+  .site-header {display: none}
+
+  body { /*margin: 0; */
+    background-color: #fff;}
+    h1 {font-size: 28px !important;}
+    h2 {font-size: 16px !important;}
+    h3 {font-size: 14px !important;}
+
+    .post-content   {font-size: 12px !important;     }
+    img, svg { display:none}
+      /* !important;} */
+  
+      footer {display: none}
+ 
+  .main-image {
+    padding-bottom: 0px;
+  } 
+  
+
+}
+
+
