@@ -7,6 +7,8 @@ image: cupcakes-reflection.jpg
 
 { Draft }
 
+{ NOTES DUMP:
+
 For most people, using data feels intimidating and boring -- and working with data is often taught in a way that reinforces these feelings. 
 
 What if we were to make working with data more like play? That would draw in more newcomers, make it less scary for them to get their feet wet, and encourage them to keep expanding their knowledge.
@@ -15,5 +17,11 @@ Obviously, you wouldn't want to use this approach all the time -- or even most o
 
 
 Similarly, don't use data to speed up/micromanage, use data to truly empower and to enhance people's jobs, open up room for creativity, meaningful autonomy, etc.
+
+
+To Flesh out
+ - Creative DataViz -- from D3.js to BabylonJS to Processing.js
+ - My beginning ideas on game boards as dashboards
+ - Why & How to Embrace Shiny Objects -- e.g., The Shiny Object Task Force
 
 }
