@@ -1,0 +1,27 @@
+I hope that by 2032 we won't be
+- Living in a fascist dictatorship
+- Still not serious about climate change
+- Still using VLOOKUP
+
+
+A quick meditation on
+The issue: needed to help client who's comfortable with Excel and Google Sheets quickly stitch together 2 tables they'd exported
+
+The problem is, the learning gap between that and either dbt + hex or pandas + Jypter notebook is too wide.  
+
+If only I could spend a few months writing a library on top of pandas.  Then I remember what it's like to work with pandas
+
+trying to get quickly back up to speed with pandas when i need to move fast and am under pressure is just too painful.  maybe it wouldn't be if I didn't have an RSI.  then again, I haven't seen anyone else do it, So maybe not.
+
+I think DBT in the long term is a better bet.  
+can I get someone up and running in 20 minutes? 
+And can I remember how to do it again six months from now?
+
+
+ex: for people Who need to clean up their data before importing it into EveryAction
+
+or need to transform & clean it up for￼￼ reporting 
+and who are familiar or comfortable with Excel or Google sheets
+they need more than a simple excel workbook but less than a full-blown complex data warehouse -- but they also need something on the path to getting there￼￼￼
+and as they move up that path they need to be working in code – So they can take advantage of all the advantages of working in code – ￼even if most of it gets created from point and click ￼￼(Or semantic auto completion)￼￼
+
