@@ -4,8 +4,6 @@ title: Use a Community-Oriented Inclusive Approach
 image: breakfast-many.jpg
 ---
 
-{ Draft }
-
 When organizations train and support their users, they usually focus on individuals. But organizations aren't just composed of individuals. Humans are social creatures who are often part of rich, complex networks. 
 
 Data Chefs argues that we should take advantage of that by leveraging the power of community:
@@ -19,5 +17,3 @@ Data Chefs argues that we should take advantage of that by leveraging the power 
 ## Foster Diversity
 
 Data science, data engineering, analytics, etc. aren't very diverse. If your organization is committed to diversity and inclusion, how do you ensure you don't replicate this problem?  The key: don't make diversity an afterthought. As you are trying to grow an ecosystem of power users, design in diversity from the ground up.
-
-}
