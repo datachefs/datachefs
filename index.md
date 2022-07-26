@@ -4,9 +4,9 @@ layout: content
 image: datachefs.jpg
 ---
 
-The more important data is to our economy, the more we need people who can slice, dice, and explain it. Today, the demand for people who are good at working with data is almost insatiable. So, many are trying to democratize working with data.
+The more important data is to our economy, the more we need people who can slice, dice, and explain it. So, many are trying to democratize working with data.
 
-Most attempts to democratize working with data fall into one of two camps:
+Most attempts fall into one of two camps:
 
 1) __Microwaving a bag of popcorn__. Just point and click, and you can bang out a remarkably sophisticated analysis. But you don't understand what's going on. Your choices are limited to the products vendors create. And you can't experiment much.
 
