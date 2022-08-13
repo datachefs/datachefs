@@ -10,9 +10,9 @@ Most attempts fall into one of two camps:
 
 1) __Microwaving a bag of popcorn__. Just point and click, and you can bang out a remarkably sophisticated analysis. But you don't understand what's going on. Your choices are limited to the products vendors create. And you can't experiment much.
 
-2) __Butchering a Pig to Make a Sandwich￼__.  Some coding tools and frameworks give their users a remarkable amount of power over how they manipulate data. But these tools are intimidating as hell to most people.
+2) __Butchering a Pig to Make a BLT￼__.  Some coding tools and frameworks give their users a remarkable amount of power over how they manipulate data. But these tools are intimidating as hell to most people.
 
-What if we made learning to working with data more like learning to bake cupcakes?
+What if we made learning to work with data more like learning to bake cupcakes?
 
 It's pretty easy to learn how to make cupcakes.  But the tools and knowledge you pick up allow you to cook a much wider range of food. And unlike learning to microwave popcorn, learning how to bake cupcakes can put you on the path to becoming a good home cook or even a professional chef.
 
