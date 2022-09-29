@@ -8,11 +8,27 @@ When organizations train and support their users, they usually focus on individu
 
 Data Chefs argues that we should take advantage of that by leveraging the power of community:
 
+How it pays off for scaling up organizing
+- From union locals to statewide network working on police brutality to corporation or nonprofit department, never feels like you have enough data folks
+
+- Developing leaders ala Citizenship Schools
+- Developing bonds across organizations (regionally/statewide)
+
+- Sanding down the edges (e.g., lightweight library to hide the icky stuff)
+- Shared resources
+- Multiple on ramps
+- Mental Models & metaphors
+
+
+
+And doing this together: working across organizations, data leadership development, overcoming the limits of just using staff by developing local members, (the cool organizing path), and the cool political economy payoff of building grassroots capacity to demand a seat at the table
+(and by focusing on building organizations and developing leaders, moves beyond individualistic BS that traps/limits so many approaches to data literacy (and makes them feel fluffy/fuzzy to me)) (data literacy from a organizing-centric perspective)
+
  - __Within Organizations__: growing an organization's internal ecosystem that helps different types of users flourish and support each other, using an iterative approach that racks up small, strategic wins while building towards larger victories
  - __Across Organizations__: creating an ecosystem across organizations so they can share knowledge, pool resources, and collectively learn to smooth the learning curve
  - __Across Societies__: expanding this ecosystem so it connects large organizations to the community so communities from Harlem to Harlan County can benefit
 
-As we do so, we should learn from previous efforts to [use grassroots-based approaches to democratize knowledge](https://toolkit.makersall.org/pages/50-support/10-community-support.html#create-multiple-on-ramps). For example:
+As we do so, we should learn from previous efforts to [use grassroots-based approaches to democratize knowledge](https://toolkit.makersall.org/pages/50-support/10-community-support.html#create-). For example:
 - [Extension Services](https://toolkit.makersall.org/pages/10-intro/30-extension-citizenship-schools.html), which powered the agricultural revolution by democratizing agricultural knowledge — and whose failures as well as successes have a lot of teach us
 - The 1960s Civil Rights Movement’s [Citizenship Schools](https://toolkit.makersall.org/pages/70-civic/20-citizenship-schools.html), which not only trained staggering numbers of African Americans in the South how to read and right but also trained more than 10,000 community leaders who were critical to the Movement’s success
 
