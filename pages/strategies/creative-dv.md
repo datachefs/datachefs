@@ -1,7 +1,6 @@
 ---
 layout: content
 title: Creative Data Visualizations
-permalink: /cdv/
 image: cookies-dataviz.jpg
 ---
 

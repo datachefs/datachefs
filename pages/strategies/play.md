@@ -11,4 +11,4 @@ What if we were to make working with data more like play? That would draw in mor
 
 Obviously, you wouldn't want to use this approach all the time -- or even most of the time. The goal isn't that everything should feel like play, it's to find strategic points where we can foster a sense of play or playfulness that entices users to use data to shape how their organization makes decisions.
 
-For some quick-dirty examples of creative dataviz using open source JavaScript libraries, see these [experiments](../..cdv/)
+For some quick-dirty examples of creative dataviz using open source JavaScript libraries, see these [experiments](creative-dv.html)
