@@ -13,9 +13,5 @@ image: cookies-dataviz.jpg
 Experiments using [p5.js](https://p5js.org/), "a language for learning how to code within the context of the visual arts."
 
  - Using [flower petals](http://makersall.org/playful-coding/pages/p5js/flowers1/index.html) for a progress report
-  
-[Creative 2](creative-dv2.html)
+ - What else p5.js can do: replication of a [Klint](http://makersall.org/playful-coding/pages/p5js/klint/index.html) painting (here’s the simple [JavaScript code](https://github.com/makersall/playful-coding/blob/main/pages/p5js/klint/sketch.js) to build it), lots of other [examples](https://p5js.org/examples/)
 
-[Creative 3](creative-dv3.html)
-
-[Creative 4](creative-dv4.html)
