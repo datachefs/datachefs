@@ -31,5 +31,4 @@ D3.JS is very powerful but a real pain to use — use as exs of what we might tr
 - Scores by [abstract office layout](https://aschneiderman.github.io/a-taste-of-d3/01-basics/01-50-Abstract-Room-Scores.html)
 - [Org Chart](https://aschneiderman.github.io/a-taste-of-d3/02-layouts/02-40-dendrogram-function.html)
 - Ms. Melissa's [Dash-Your-Hopes Board](https://aschneiderman.github.io/a-taste-of-d3/03-animation/03-30-Text-Ms-Melissa.html)
-- creating
-[D3 Sandwiches](http://aschneiderman.github.io/d3_sandwich/), a pilot project toexplore teaching d3 by interactively looking at the layers of a d3 "sandwich." 
+- creating [D3 Sandwiches](http://aschneiderman.github.io/d3_sandwich/), a pilot project toexplore teaching d3 by interactively looking at the layers of a d3 "sandwich." 
