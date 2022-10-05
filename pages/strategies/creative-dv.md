@@ -4,7 +4,8 @@ title: Creative Data Visualizations
 image: cookies-dataviz.jpg
 ---
 
-[Working America example](https://aschneiderman.github.io/a-taste-of-d3/04-brainstorming/playful.html) of an old school creative data viz using toys and chocolate — plus other [simple d3 experiments](https://aschneiderman.github.io/a-taste-of-d3/)
+- [Working America example](https://aschneiderman.github.io/a-taste-of-d3/04-brainstorming/playful.html) of an old school creative data viz using toys and chocolate o
+-  [simple d3 experiments](https://aschneiderman.github.io/a-taste-of-d3/)
 
 It's pretty straightforward to give users a nice user interface for creating standard data visualizations. But what if you want to go beyond that? Creative Data Visualizations is a series of [Data Chefs]( https://datachefs.org/)' experiments to see if we can incrementally teach coding to folks who aren't developers.
 
