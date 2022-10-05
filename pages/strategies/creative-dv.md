@@ -15,13 +15,13 @@ It's pretty straightforward to give users a nice user interface for creating sta
 My first DataViz experiments:
 
 <!-- - The [simplest first program]](../pages/p5js/first-project/index.html); here's the [JavaScript](https://github.com/makersall/playful-coding/blob/main/pages/p5js/first-project/sketch.js) -->
- - Using [flowers](../pages/p5js/flowers1/index.html) for a progress report
+ - Using [flowers](http://makersall.org/playful-coding/pages/p5js/flowers1/index.html) for a progress report
 -  My  [playground](../pages/p5js/experiments.html), for taking baby steps to start teaching myself p5
   
 _{NOTE: put copies of my DataViz experiments on the p5.js online editor/website}_
   
 What p5.js can do:  
-- [Klint](../pages/p5js/klint/index.html), a clone of  [niccab](https://editor.p5js.org/niccab/sketches)'s replication of a Klint painting, to give you a feel for what a relatively small number of Processing commands can do ([JavaScript code](https://github.com/makersall/playful-coding/blob/main/pages/p5js/klint/sketch.js))
+- [Klint](http://makersall.org/playful-coding/pages/p5js/klint/index.html), a clone of  [niccab](https://editor.p5js.org/niccab/sketches)'s replication of a Klint painting, to give you a feel for what a relatively small number of Processing commands can do ([JavaScript code](https://github.com/makersall/playful-coding/blob/main/pages/p5js/klint/sketch.js))
 - Processing comes with a terrific set of [examples](https://p5js.org/examples/) that should give you an idea of what you can do; also check out the [reference](https://p5js.org/reference/) page for examples of how to use specific commands
 - [Examples I've grabbed](../pages/p5js/examples.html) from around the web
 
