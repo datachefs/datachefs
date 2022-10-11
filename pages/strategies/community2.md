@@ -4,7 +4,28 @@ title: Use a Community-Oriented Inclusive Approach
 image: breakfast-many.jpg
 ---
 
-When organizations train and support their users, they usually focus on individuals. But organizations aren't just composed of individuals. Humans are social creatures who are often part of rich, complex networks. 
+Right now, we don't have a great model for getting folks up to speed. Maybe we do a little broad training, like running folks through a training on how to use the basics of one tool.
+
+Data camps aren't much better: they just don't scale. How many people have time to disappear for many weeks? And if it's just for a few days, how likely are people to remember what they were taught? What if they need help afterwards? For that matter, know enough to know that they enjoy doing it so that they would be willing to invest the time that a data camp takes?
+
+And in the nonprofit world, we've got additional problems:
+- Even though many of the problems we face are the same or are similar, we rarely learn from each other beyond very abstract stuff. Instead, we keep reinventing the wheel: from basic cheat sheets to data models, despite our values we rarely share
+- Must large grassroots groups can only afford to have a small number of staff who are skilled at working with data -- nowhere what they need to keep up with demand. At the same time, we rarely take advantage of the unique opportunities we have:
+  - __Skilled Members__: many have members who are either already skilled with working with data or would be good at it with a little training and support
+  - __Regional Partners__: black church in a big city might not have capacity, but other black churches or unions, etc. in that city might
+
+
+Data Chefs' approach for learning is built on 3 key principles:
+
+- 
+- __Learn From Grassroots Leadership Development Programs__:
+
+
+
+<hr/>
+
+
+
 
 Data Chefs argues that we should take advantage of that by leveraging the power of community:
 
