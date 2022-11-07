@@ -1,7 +1,7 @@
 ---
 layout: content
 title: "Pilot Project: Growing a Nonprofit Creative DataViz Ecosystem"
-image: cupcakes-reflection.jpg
+image: cookies-dataviz.jpg
 ---
 
 Back before everything was digital, community organizers routinely drew pictures — or in some cases, toys and chocolate — to turn data into stories. Now that all the data is electronic, it’s much less common. And when people do it, it tends to be expensive and a one-off.
