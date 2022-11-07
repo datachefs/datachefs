@@ -4,7 +4,7 @@ title: "Pilot Project: Growing a Nonprofit Creative DataViz Ecosystem"
 image: cookies-dataviz.jpg
 ---
 
-Back before everything was digital, community organizers routinely drew pictures — or in some cases, toys and chocolate — to turn data into stories. Now that all the data is electronic, it’s much less common. And when people do it, it tends to be expensive and a one-off.
+Back before everything was digital, community organizers routinely drew pictures — or in some cases, [toys and chocolate](/pages/examples/worrking-america/playful.html)   — to turn data into stories. Now that all the data is electronic, it’s much less common. And when people do it, it tends to be expensive and a one-off.
  
 But in the past few years, two changes have opened up some interesting opportunities:
 - New free tech -- e.g., open source JavaScript libraries such as p5.js and BablyonJS -- that can produce amazing graphics, and based on my experience working with non-techies at ASHA and in the community, I'm confident the tech could be modified so that an adventurous beginner could easily use it
