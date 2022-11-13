@@ -7,7 +7,7 @@ image: breakfast-many.jpg
 ## The Problem
 
 Right now, we don't have a good model for getting folks up to speed at scale:
-- Very short, one-off training on how to use the basics of one tool can be helpful, but they don't provide either the support or a clear pathway forward
+- Very short, one-off trainings on how to use the basics of one dataa tool can be helpful, but they don't provide either the support or a clear pathway forward for continuing to build a Data Chef's competence and skill
 - Data camps just don't scale: most people don't have the time to focus solely on data for many weeks, and most camps can only train a relatively small number of people. And data camps set the bar high for entry; many people don't have enough experience to know whether they enjoy working with data enough that it makes sense to invest a significant amount of time in a data camp
 
 And in the nonprofit world, we also face other daunting problems:
@@ -53,4 +53,4 @@ One of the painful lessons we can learn from many Agricultural Extension Service
 
 Given that today's ecosystem of data science, data engineering, analytics, etc. aren't diverse, how do we ensure that as we democratize working with data we also build an ecosystem that's truly inclusive? The key: don't make diversity an afterthought.  As we grow an ecosystem of Data Chefs, we need to:
 - Design in diversity from the ground up
-- Start by putting diverse community grassroots groups at the center of the ecosystem -- especially diverse grassroots groups that operate at scale's
+- Start by putting diverse community grassroots groups at the center of the ecosystem -- especially diverse grassroots groups that operate at scale
