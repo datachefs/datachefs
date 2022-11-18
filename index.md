@@ -23,7 +23,7 @@ Data Chefs is a framework for helping democratize working with data by:
 
 These 2 strategies are shaped by the principle of [Smoothing the Learning Curve](/pages/strategies/smooth-learning-curve.html)
 
-Data Chefs is focused on addressing one of today’s most pressing tech needs. But in doing so, it also hopes to develop a model for helping communities [shape and benefit from the explosion of wealth](https://toolkit.makersall.org/) that will be created by AI/ML, VR/AR, and other emerging tech over the next 20-30 years.
+Data Chefs is focused on addressing one of our society’s current technology issues. But indoing so, it also hopes to develop a model for helping communities [shape and benefit from the explosion of wealth](https://toolkit.makersall.org/) that will be created by AI/ML, VR/AR, and other emerging tech over the next 20-30 years.
 
 _NOTE: Data Chefs is a work in progress. This is v.0.5_
 
