@@ -7,12 +7,12 @@ image: breakfast-many.jpg
 ## The Problem
 
 Right now, we don't have a good model for getting folks up to speed at scale:
-- Very short, one-off trainings on how to use the basics of one dataa tool can be helpful, but they don't provide either the support or a clear pathway forward for continuing to build a Data Chef's competence and skill
+- Very short, one-off trainings on how to use the basics of one data tool can be helpful, but they don't provide either the support or a clear pathway forward for continuing to build a Data Chef's competence and skill
 - Data camps just don't scale: most people don't have the time to focus solely on data for many weeks, and most camps can only train a relatively small number of people. And data camps set the bar high for entry; many people don't have enough experience to know whether they enjoy working with data enough that it makes sense to invest a significant amount of time in a data camp
 
 And in the nonprofit world, we also face other daunting problems:
 - Even though many of the problems we face are the same or are similar, we rarely learn from each other. Instead, we keep reinventing the wheel --  from basic cheat sheets to data models, despite our commitment to community, we rarely share what we've developed or learned
-- Must large grassroots groups can only afford to have a small number of staff who are skilled at working with data -- nowhere what they need to keep up with demand. At the same time, they rarely take advantage of the unique opportunities that are built into how their organizations are structured:
+- Most large grassroots groups can only afford to have a small number of staff who are skilled at working with data -- nowhere what they need to keep up with demand. At the same time, they rarely take advantage of the unique opportunities that are built into how their organizations are structured:
   - __Skilled Members__: many nonprofits have members who are either already skilled with working with data or would get good at it with some training and support
   - __Regional Partners__: while one individual black church in a big city might not have much capacity, they could have plenty of capacity if a number of black churches, unions, etc. in that city or region came together
 
