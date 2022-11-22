@@ -16,7 +16,7 @@ What if we made learning to work with data more like learning to bake cupcakes?
 
 It's pretty easy to learn how to make cupcakes.  But the tools and knowledge you pick up allow you to cook a much wider range of food. And unlike learning to microwave popcorn, learning how to bake cupcakes can put you on the path to becoming a good home cook or even a professional chef.
 
-Data Chefs is a framework for helping democratize working with data by:
+Data Chefs is a grassroots-oriented framework for helping democratize working with data by:
 
  - Creating a [Community-Oriented, Inclusive Ecosystem](/pages/strategies/community.html)
  - Encouraging [Playfulness and Creativity](/pages/strategies/play.html)
