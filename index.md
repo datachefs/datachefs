@@ -4,7 +4,7 @@ layout: content
 image: datachefs.jpg
 ---
 
-The more important data is to our economy, the more critical it is for people in every community to be able to slice, dice, and explain it. So, many are trying to democratize working with data.
+The more important data is to our economy, the more critical it is for people in every community to be able to slice, dice, and explain it. So, many are trying to democratize working with data. 
 
 Most attempts fall into one of two camps:
 
