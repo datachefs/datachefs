@@ -41,7 +41,7 @@ In Extension Services, for example, they used the following tactics:
 -  __Produced Informal Learning Materials__. To supply these clubs, extension agents provided lots and lots of pamphlets and other written materials that were crafted to help teach farmers new techniques and address any concerns they had. Many extension agents also were heavy users of radio broadcasts and other new forms of communication.
 -  __Fostered Community Events__. Extension agents helped foster state fairs and other places where farmers could see demonstrations, compete to see who could use new techniques to grow the best crops, etc.
 
-Where it makes sense to create on ramps will depend on the community. For example, churches and other houses of worship who could offer a short program before or after one of their weekly sermons so members could try a little coding and talk to people who are already doing it. Union locals are another great place for creating multiple on ramps. {Also link to examples of what is been done with barbershops and beauty salons in communities of color}
+Where it makes sense to create on ramps will depend on the community. For example, churches and other houses of worship who could offer a short program before or after one of their weekly sermons so members could try a little coding and talk to people who are already doing it. Union locals are another great place for creating multiple on ramps. 
 
 ### To Overcome Insecurity And Other Psychological Barriers, Foster Peer-To-Peer Support
 
